@@ -2175,7 +2175,10 @@
     "eligible_factories": [
       "F_CN_01",
       "F_TH_01"
-    ]
+    ],
+    "fixed_assignment": {
+    "factory_id": "F_CN_01"
+  }
   },
   {
     "order_id": "ORD_100",
