@@ -1,0 +1,23 @@
+{
+  "data_paths": {
+    "order_data_path": "data/orders.json",
+    "factory_data_path": "data/factories.json"
+  },
+  "output_paths": {
+    "result_path": "output/schedule_result.json",
+    "kpi_path": "output/kpi_summary.json"
+  },
+  "run_config": {
+    "base_date": "2025-06-30",
+    "solver_time_limit_seconds": 60
+  },
+  "active_constraints": [
+    "order_unique_assign",
+    "capacity",
+    "material_lead_time"
+  ],
+  "objective_weights": {
+    "tardiness": 1,
+    "workload_balance": 1
+  }
+}

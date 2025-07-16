@@ -1,0 +1,58 @@
+[
+  {
+    "factory_id": "F_CN_01",
+    "region": "CHINA",
+    "production_efficiencies": {
+      "外套": [
+        { "min_quantity": 0, "max_quantity": 1999, "efficiency": 0.95 },
+        { "min_quantity": 2000, "max_quantity": 99999, "efficiency": 1.0 }
+      ],
+      "裤子": [
+        { "min_quantity": 0, "max_quantity": 99999, "efficiency": 1.05 }
+      ]
+    },
+    "capacity_periods": [
+      { "start_date": "2025-08-01", "end_date": "2025-08-14", "capacity_by_process": { "Proc_A_裁剪": 33000, "Proc_B_缝纫": 41000 }},
+      { "start_date": "2025-08-15", "end_date": "2025-08-28", "capacity_by_process": { "Proc_A_裁剪": 33000, "Proc_B_缝纫": 41000 }},
+      { "start_date": "2025-08-29", "end_date": "2025-09-11", "capacity_by_process": { "Proc_A_裁剪": 33000, "Proc_B_缝纫": 41000 }},
+      { "start_date": "2025-09-12", "end_date": "2025-09-25", "capacity_by_process": { "Proc_A_裁剪": 33000, "Proc_B_缝纫": 41000 }},
+      { "start_date": "2025-09-26", "end_date": "2025-10-09", "capacity_by_process": { "Proc_A_裁剪": 35000, "Proc_B_缝纫": 45000 }},
+      { "start_date": "2025-10-10", "end_date": "2025-10-23", "capacity_by_process": { "Proc_A_裁剪": 35000, "Proc_B_缝纫": 45000 }},
+      { "start_date": "2025-10-24", "end_date": "2025-11-06", "capacity_by_process": { "Proc_A_裁剪": 35000, "Proc_B_缝纫": 45000 }},
+      { "start_date": "2025-11-07", "end_date": "2025-11-20", "capacity_by_process": { "Proc_A_裁剪": 35000, "Proc_B_缝纫": 45000 }},
+      { "start_date": "2025-11-21", "end_date": "2025-12-04", "capacity_by_process": { "Proc_A_裁剪": 30000, "Proc_B_缝纫": 38000 }},
+      { "start_date": "2025-12-05", "end_date": "2025-12-18", "capacity_by_process": { "Proc_A_裁剪": 30000, "Proc_B_缝纫": 38000 }},
+      { "start_date": "2025-12-19", "end_date": "2026-01-01", "capacity_by_process": { "Proc_A_裁剪": 25000, "Proc_B_缝纫": 30000 }},
+      { "start_date": "2026-01-02", "end_date": "2026-01-15", "capacity_by_process": { "Proc_A_裁剪": 33000, "Proc_B_缝纫": 41000 }},
+      { "start_date": "2026-01-16", "end_date": "2026-01-29", "capacity_by_process": { "Proc_A_裁剪": 33000, "Proc_B_缝纫": 41000 }}
+    ]
+  },
+  {
+    "factory_id": "F_TH_01",
+    "region": "THAILAND",
+    "production_efficiencies": {
+      "外套": [
+        { "min_quantity": 0, "max_quantity": 1999, "efficiency": 1.0 },
+        { "min_quantity": 2000, "max_quantity": 99999, "efficiency": 0.98 }
+      ],
+      "裤子": [
+        { "min_quantity": 0, "max_quantity": 99999, "efficiency": 1.0 }
+      ]
+    },
+    "capacity_periods": [
+        { "start_date": "2025-08-01", "end_date": "2025-08-14", "capacity_by_process": { "Proc_A_裁剪": 28000, "Proc_B_缝纫": 35000, "Proc_C_整烫": 15000 }},
+        { "start_date": "2025-08-15", "end_date": "2025-08-28", "capacity_by_process": { "Proc_A_裁剪": 28000, "Proc_B_缝纫": 35000, "Proc_C_整烫": 15000 }},
+        { "start_date": "2025-08-29", "end_date": "2025-09-11", "capacity_by_process": { "Proc_A_裁剪": 28000, "Proc_B_缝纫": 35000, "Proc_C_整烫": 15000 }},
+        { "start_date": "2025-09-12", "end_date": "2025-09-25", "capacity_by_process": { "Proc_A_裁剪": 28000, "Proc_B_缝纫": 35000, "Proc_C_整烫": 15000 }},
+        { "start_date": "2025-09-26", "end_date": "2025-10-09", "capacity_by_process": { "Proc_A_裁剪": 30000, "Proc_B_缝纫": 38000, "Proc_C_整烫": 17000 }},
+        { "start_date": "2025-10-10", "end_date": "2025-10-23", "capacity_by_process": { "Proc_A_裁剪": 30000, "Proc_B_缝纫": 38000, "Proc_C_整烫": 17000 }},
+        { "start_date": "2025-10-24", "end_date": "2025-11-06", "capacity_by_process": { "Proc_A_裁剪": 30000, "Proc_B_缝纫": 38000, "Proc_C_整烫": 17000 }},
+        { "start_date": "2025-11-07", "end_date": "2025-11-20", "capacity_by_process": { "Proc_A_裁剪": 30000, "Proc_B_缝纫": 38000, "Proc_C_整烫": 17000 }},
+        { "start_date": "2025-11-21", "end_date": "2025-12-04", "capacity_by_process": { "Proc_A_裁剪": 25000, "Proc_B_缝纫": 32000, "Proc_C_整烫": 12000 }},
+        { "start_date": "2025-12-05", "end_date": "2025-12-18", "capacity_by_process": { "Proc_A_裁剪": 25000, "Proc_B_缝纫": 32000, "Proc_C_整烫": 12000 }},
+        { "start_date": "2025-12-19", "end_date": "2026-01-01", "capacity_by_process": { "Proc_A_裁剪": 22000, "Proc_B_缝纫": 28000, "Proc_C_整烫": 10000 }},
+        { "start_date": "2026-01-02", "end_date": "2026-01-15", "capacity_by_process": { "Proc_A_裁剪": 28000, "Proc_B_缝纫": 35000, "Proc_C_整烫": 15000 }},
+        { "start_date": "2026-01-16", "end_date": "2026-01-29", "capacity_by_process": { "Proc_A_裁剪": 28000, "Proc_B_缝纫": 35000, "Proc_C_整烫": 15000 }}
+    ]
+  }
+]

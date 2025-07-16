@@ -1,0 +1,2202 @@
+[
+  {
+    "order_id": "ORD_001",
+    "customer": "客户_A",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 7819,
+    "due_date": "2026-03-08",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 44,
+      "THAILAND": 48
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7819,
+      "Proc_B_缝纫": 9382
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_002",
+    "customer": "客户_B",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 6220,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 44,
+      "THAILAND": 37
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 6220,
+      "Proc_B_缝纫": 7464
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_003",
+    "customer": "客户_C",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 1800,
+    "due_date": "2025-11-20",
+    "material_purchasing_lead_time": 21,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 23,
+      "THAILAND": 34
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_004",
+    "customer": "客户_D",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 4000,
+    "due_date": "2025-11-29",
+    "material_purchasing_lead_time": 27,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 48,
+      "THAILAND": 30
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_005",
+    "customer": "客户_E",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 3500,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 22,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 39,
+      "THAILAND": 36
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2800,
+      "Proc_B_缝纫": 4200,
+      "Proc_C_整烫": 1750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_006",
+    "customer": "客户_F",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 7445,
+    "due_date": "2026-03-05",
+    "material_purchasing_lead_time": 6,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 27,
+      "THAILAND": 42
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7445,
+      "Proc_B_缝纫": 8934
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_007",
+    "customer": "客户_G",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 1800,
+    "due_date": "2026-03-08",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 26,
+      "THAILAND": 24
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_008",
+    "customer": "客户_H",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 1138,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 20,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 43
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1138,
+      "Proc_B_缝纫": 1365
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_009",
+    "customer": "客户_I",
+    "product_type": "衬衫",
+    "style": "SS26-长袖衬衫-001",
+    "quantity": 2800,
+    "due_date": "2025-10-21",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 21,
+      "THAILAND": 48
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2240,
+      "Proc_B_缝纫": 3360,
+      "Proc_C_整烫": 1400
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_010",
+    "customer": "客户_J",
+    "product_type": "衬衫",
+    "style": "SS26-短袖衬衫-005",
+    "quantity": 1500,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 5,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 39
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1200,
+      "Proc_B_缝纫": 1800,
+      "Proc_C_整烫": 750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_011",
+    "customer": "客户_K",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 5694,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 22,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 20,
+      "THAILAND": 44
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 5694,
+      "Proc_B_缝纫": 6832
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_012",
+    "customer": "客户_L",
+    "product_type": "外套",
+    "style": "AW25-风衣-001",
+    "quantity": 800,
+    "due_date": "2026-02-14",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 29,
+      "THAILAND": 43
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 800,
+      "Proc_B_缝纫": 1200
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_013",
+    "customer": "客户_M",
+    "product_type": "外套",
+    "style": "AW25-风衣-001",
+    "quantity": 4000,
+    "due_date": "2026-04-10",
+    "material_purchasing_lead_time": 12,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 20
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_014",
+    "customer": "客户_N",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 5000,
+    "due_date": "2026-02-14",
+    "material_purchasing_lead_time": 19,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 44,
+      "THAILAND": 36
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000,
+      "Proc_C_整烫": 2500
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_015",
+    "customer": "客户_O",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 5878,
+    "due_date": "2026-02-09",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 41
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 5878,
+      "Proc_B_缝纫": 7053
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_016",
+    "customer": "客户_P",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 1800,
+    "due_date": "2026-02-03",
+    "material_purchasing_lead_time": 22,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 39,
+      "THAILAND": 33
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700,
+      "Proc_C_整烫": 720
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_017",
+    "customer": "客户_Q",
+    "product_type": "外套",
+    "style": "AW25-风衣-001",
+    "quantity": 2500,
+    "due_date": "2026-01-26",
+    "material_purchasing_lead_time": 19,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 36,
+      "THAILAND": 29
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_018",
+    "customer": "客户_R",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 4519,
+    "due_date": "2025-11-04",
+    "material_purchasing_lead_time": 13,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 36,
+      "THAILAND": 33
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4519,
+      "Proc_B_缝纫": 5422
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_019",
+    "customer": "客户_S",
+    "product_type": "衬衫",
+    "style": "SS26-长袖衬衫-001",
+    "quantity": 3500,
+    "due_date": "2025-12-19",
+    "material_purchasing_lead_time": 28,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 43
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2800,
+      "Proc_B_缝纫": 4200,
+      "Proc_C_整烫": 1750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_020",
+    "customer": "客户_T",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 1800,
+    "due_date": "2025-10-24",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 37
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_021",
+    "customer": "客户_U",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 4441,
+    "due_date": "2026-01-29",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 44,
+      "THAILAND": 36
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4441,
+      "Proc_B_缝纫": 5329
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_022",
+    "customer": "客户_V",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 2500,
+    "due_date": "2026-01-09",
+    "material_purchasing_lead_time": 14,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 28,
+      "THAILAND": 45
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_023",
+    "customer": "客户_W",
+    "product_type": "衬衫",
+    "style": "SS26-短袖衬衫-005",
+    "quantity": 1500,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 20,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 43,
+      "THAILAND": 28
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1200,
+      "Proc_B_缝纫": 1800,
+      "Proc_C_整烫": 750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_024",
+    "customer": "客户_X",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 7949,
+    "due_date": "2026-02-14",
+    "material_purchasing_lead_time": 19,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 20
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7949,
+      "Proc_B_缝纫": 9538
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_025",
+    "customer": "客户_Y",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 1572,
+    "due_date": "2026-03-13",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 22
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1572,
+      "Proc_B_缝纫": 1886
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_026",
+    "customer": "客户_Z",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 4443,
+    "due_date": "2026-02-18",
+    "material_purchasing_lead_time": 21,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 41,
+      "THAILAND": 43
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4443,
+      "Proc_B_缝纫": 5331,
+      "Proc_C_整烫": 1777
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_027",
+    "customer": "客户_A1",
+    "product_type": "衬衫",
+    "style": "SS26-长袖衬衫-001",
+    "quantity": 3500,
+    "due_date": "2026-03-02",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 21,
+      "THAILAND": 35
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2800,
+      "Proc_B_缝纫": 4200,
+      "Proc_C_整烫": 1750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_028",
+    "customer": "客户_B1",
+    "product_type": "外套",
+    "style": "SS26-夹克-002",
+    "quantity": 2500,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 12,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 28
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_029",
+    "customer": "客户_C1",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 3500,
+    "due_date": "2026-03-08",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 22
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2800,
+      "Proc_B_缝纫": 4200,
+      "Proc_C_整烫": 1750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_030",
+    "customer": "客户_D1",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 1133,
+    "due_date": "2025-10-21",
+    "material_purchasing_lead_time": 17,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 40,
+      "THAILAND": 35
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1133,
+      "Proc_B_缝纫": 1359
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_031",
+    "customer": "客户_E1",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 1800,
+    "due_date": "2025-12-05",
+    "material_purchasing_lead_time": 11,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 20
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_032",
+    "customer": "客户_F1",
+    "product_type": "外套",
+    "style": "SS26-夹克-002",
+    "quantity": 4000,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 24,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 45
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_033",
+    "customer": "客户_G1",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 1500,
+    "due_date": "2026-02-12",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 24
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1200,
+      "Proc_B_缝纫": 1800,
+      "Proc_C_整烫": 750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_034",
+    "customer": "客户_H1",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 7877,
+    "due_date": "2026-04-10",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 26
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7877,
+      "Proc_B_缝纫": 9452,
+      "Proc_C_整烫": 3150
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_035",
+    "customer": "客户_I1",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 3341,
+    "due_date": "2025-10-14",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 41,
+      "THAILAND": 36
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 3341,
+      "Proc_B_缝纫": 4009
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_036",
+    "customer": "客户_J1",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 2500,
+    "due_date": "2026-02-09",
+    "material_purchasing_lead_time": 12,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 49,
+      "THAILAND": 48
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_037",
+    "customer": "客户_K1",
+    "product_type": "外套",
+    "style": "SS26-夹克-002",
+    "quantity": 2500,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 23,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 20,
+      "THAILAND": 20
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_038",
+    "customer": "客户_L1",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 7888,
+    "due_date": "2026-01-14",
+    "material_purchasing_lead_time": 11,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 40
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7888,
+      "Proc_B_缝纫": 9465
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_039",
+    "customer": "客户_M1",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 4000,
+    "due_date": "2026-04-03",
+    "material_purchasing_lead_time": 17,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 28,
+      "THAILAND": 29
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_040",
+    "customer": "客户_N1",
+    "product_type": "衬衫",
+    "style": "SS26-长袖衬衫-001",
+    "quantity": 2800,
+    "due_date": "2025-11-20",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 48
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2240,
+      "Proc_B_缝纫": 3360,
+      "Proc_C_整烫": 1400
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_041",
+    "customer": "客户_O1",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 4255,
+    "due_date": "2025-11-22",
+    "material_purchasing_lead_time": 16,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 28
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4255,
+      "Proc_B_缝纫": 5106
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_042",
+    "customer": "客户_P1",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 7815,
+    "due_date": "2026-03-01",
+    "material_purchasing_lead_time": 27,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 47,
+      "THAILAND": 39
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7815,
+      "Proc_B_缝纫": 9378,
+      "Proc_C_整烫": 3126
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_043",
+    "customer": "客户_Q1",
+    "product_type": "衬衫",
+    "style": "SS26-短袖衬衫-005",
+    "quantity": 5000,
+    "due_date": "2026-02-17",
+    "material_purchasing_lead_time": 14,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 43,
+      "THAILAND": 31
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000,
+      "Proc_C_整烫": 2500
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_044",
+    "customer": "客户_R1",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 1800,
+    "due_date": "2026-02-09",
+    "material_purchasing_lead_time": 13,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 21,
+      "THAILAND": 20
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_045",
+    "customer": "客户_S1",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 2500,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 15,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 47,
+      "THAILAND": 20
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_046",
+    "customer": "客户_T1",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 4478,
+    "due_date": "2026-03-23",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 48
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4478,
+      "Proc_B_缝纫": 5373
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_047",
+    "customer": "客户_U1",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 7818,
+    "due_date": "2025-12-05",
+    "material_purchasing_lead_time": 11,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 40,
+      "THAILAND": 41
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7818,
+      "Proc_B_缝纫": 9381
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_048",
+    "customer": "客户_V1",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 2500,
+    "due_date": "2025-11-20",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 27,
+      "THAILAND": 44
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750,
+      "Proc_C_整烫": 1000
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_049",
+    "customer": "客户_W1",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 6475,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 22,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 35,
+      "THAILAND": 20
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 6475,
+      "Proc_B_缝纫": 7770
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_050",
+    "customer": "客户_X1",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 1500,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 29,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 33
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1200,
+      "Proc_B_缝纫": 1800,
+      "Proc_C_整烫": 750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_051",
+    "customer": "客户_Y1",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 7881,
+    "due_date": "2026-04-03",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 49,
+      "THAILAND": 48
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7881,
+      "Proc_B_缝纫": 9457
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_052",
+    "customer": "客户_Z1",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 6867,
+    "due_date": "2026-02-18",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 45,
+      "THAILAND": 39
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 6867,
+      "Proc_B_缝纫": 8240
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_053",
+    "customer": "客户_A2",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 4000,
+    "due_date": "2025-11-20",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 49,
+      "THAILAND": 31
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000,
+      "Proc_C_整烫": 1600
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_054",
+    "customer": "客户_B2",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 5733,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 14,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 42
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 5733,
+      "Proc_B_缝纫": 6879
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_055",
+    "customer": "客户_C2",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 1868,
+    "due_date": "2026-01-09",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 31,
+      "THAILAND": 29
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1868,
+      "Proc_B_缝纫": 2241
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_056",
+    "customer": "客户_D2",
+    "product_type": "外套",
+    "style": "AW25-风衣-001",
+    "quantity": 2500,
+    "due_date": "2025-10-14",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 35
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_057",
+    "customer": "客户_E2",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 800,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 41
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 800,
+      "Proc_B_缝纫": 1200
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_058",
+    "customer": "客户_F2",
+    "product_type": "外套",
+    "style": "AW25-风衣-001",
+    "quantity": 1800,
+    "due_date": "2026-03-01",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 27,
+      "THAILAND": 20
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_059",
+    "customer": "客户_G2",
+    "product_type": "外套",
+    "style": "SS26-夹克-002",
+    "quantity": 800,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 20,
+      "THAILAND": 37
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 800,
+      "Proc_B_缝纫": 1200
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_060",
+    "customer": "客户_H2",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 2500,
+    "due_date": "2026-01-09",
+    "material_purchasing_lead_time": 23,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 39
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750,
+      "Proc_C_整烫": 1000
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_061",
+    "customer": "客户_I2",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 3016,
+    "due_date": "2025-10-15",
+    "material_purchasing_lead_time": 12,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 43,
+      "THAILAND": 20
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 3016,
+      "Proc_B_缝纫": 3619
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_062",
+    "customer": "客户_J2",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 5000,
+    "due_date": "2025-12-05",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 39,
+      "THAILAND": 34
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000,
+      "Proc_C_整烫": 2500
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_063",
+    "customer": "客户_K2",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 2500,
+    "due_date": "2025-12-25",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 49,
+      "THAILAND": 46
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_064",
+    "customer": "客户_L2",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 800,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 20
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 800,
+      "Proc_B_缝纫": 1200
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_065",
+    "customer": "客户_M2",
+    "product_type": "外套",
+    "style": "SS26-夹克-002",
+    "quantity": 2500,
+    "due_date": "2026-04-03",
+    "material_purchasing_lead_time": 5,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 22,
+      "THAILAND": 48
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750,
+      "Proc_C_整烫": 1000
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_066",
+    "customer": "客户_N2",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 6965,
+    "due_date": "2025-10-14",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 49,
+      "THAILAND": 20
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 6965,
+      "Proc_B_缝纫": 8358
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_067",
+    "customer": "客户_O2",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 5000,
+    "due_date": "2026-03-01",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 47
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000,
+      "Proc_C_整烫": 2500
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_068",
+    "customer": "客户_P2",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 3817,
+    "due_date": "2026-02-12",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 21,
+      "THAILAND": 23
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 3817,
+      "Proc_B_缝纫": 4580
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_069",
+    "customer": "客户_Q2",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 1746,
+    "due_date": "2026-02-17",
+    "material_purchasing_lead_time": 23,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 43
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1746,
+      "Proc_B_缝纫": 2095
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_070",
+    "customer": "客户_R2",
+    "product_type": "衬衫",
+    "style": "SS26-长袖衬衫-001",
+    "quantity": 1500,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 37,
+      "THAILAND": 21
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1200,
+      "Proc_B_缝纫": 1800,
+      "Proc_C_整烫": 750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_071",
+    "customer": "客户_S2",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 2800,
+    "due_date": "2025-10-21",
+    "material_purchasing_lead_time": 12,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 26,
+      "THAILAND": 22
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2240,
+      "Proc_B_缝纫": 3360,
+      "Proc_C_整烫": 1400
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_072",
+    "customer": "客户_T2",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 7886,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 25
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 7886,
+      "Proc_B_缝纫": 9463
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_073",
+    "customer": "客户_U2",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 4000,
+    "due_date": "2026-03-12",
+    "material_purchasing_lead_time": 7,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 22,
+      "THAILAND": 43
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_074",
+    "customer": "客户_V2",
+    "product_type": "外套",
+    "style": "AW25-风衣-001",
+    "quantity": 4000,
+    "due_date": "2026-02-18",
+    "material_purchasing_lead_time": 20,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 32,
+      "THAILAND": 40
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_075",
+    "customer": "客户_W2",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 4022,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 17,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 45,
+      "THAILAND": 20
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4022,
+      "Proc_B_缝纫": 4826
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_076",
+    "customer": "客户_X2",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 4000,
+    "due_date": "2025-11-20",
+    "material_purchasing_lead_time": 27,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 47,
+      "THAILAND": 37
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000,
+      "Proc_C_整烫": 1600
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_077",
+    "customer": "客户_Y2",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 1826,
+    "due_date": "2025-12-19",
+    "material_purchasing_lead_time": 20,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 43,
+      "THAILAND": 27
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1826,
+      "Proc_B_缝纫": 2191
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_078",
+    "customer": "客户_Z2",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 800,
+    "due_date": "2026-03-08",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 43,
+      "THAILAND": 39
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 800,
+      "Proc_B_缝纫": 1200
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_079",
+    "customer": "客户_A3",
+    "product_type": "外套",
+    "style": "SS26-夹克-002",
+    "quantity": 1800,
+    "due_date": "2026-01-26",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 29
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_080",
+    "customer": "客户_B3",
+    "product_type": "外套",
+    "style": "AW25-大衣-007",
+    "quantity": 2500,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 28,
+      "THAILAND": 20
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_081",
+    "customer": "客户_C3",
+    "product_type": "衬衫",
+    "style": "SS26-短袖衬衫-005",
+    "quantity": 3500,
+    "due_date": "2025-10-15",
+    "material_purchasing_lead_time": 10,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 48
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2800,
+      "Proc_B_缝纫": 4200,
+      "Proc_C_整烫": 1750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_082",
+    "customer": "客户_D3",
+    "product_type": "外套",
+    "style": "AW25-风衣-001",
+    "quantity": 2500,
+    "due_date": "2025-12-05",
+    "material_purchasing_lead_time": 28,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 20,
+      "THAILAND": 28
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_083",
+    "customer": "客户_E3",
+    "product_type": "衬衫",
+    "style": "SS26-长袖衬衫-001",
+    "quantity": 1500,
+    "due_date": "2026-03-08",
+    "material_purchasing_lead_time": 9,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 39,
+      "THAILAND": 46
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1200,
+      "Proc_B_缝纫": 1800,
+      "Proc_C_整烫": 750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_084",
+    "customer": "客户_F3",
+    "product_type": "外套",
+    "style": "SS26-夹克-002",
+    "quantity": 1800,
+    "due_date": "2026-02-14",
+    "material_purchasing_lead_time": 27,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 47,
+      "THAILAND": 20
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1800,
+      "Proc_B_缝纫": 2700
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_085",
+    "customer": "客户_G3",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 1898,
+    "due_date": "2026-01-29",
+    "material_purchasing_lead_time": 26,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 43
+    },
+    "production_lead_time": 2,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1898,
+      "Proc_B_缝纫": 2277
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_086",
+    "customer": "客户_H3",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 1133,
+    "due_date": "2025-10-15",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 39
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1133,
+      "Proc_B_缝纫": 1359,
+      "Proc_C_整烫": 453
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_087",
+    "customer": "客户_I3",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 4488,
+    "due_date": "2026-03-23",
+    "material_purchasing_lead_time": 17,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 30,
+      "THAILAND": 38
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4488,
+      "Proc_B_缝纫": 5385
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_088",
+    "customer": "客户_J3",
+    "product_type": "衬衫",
+    "style": "SS26-短袖衬衫-005",
+    "quantity": 2800,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 9,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 34,
+      "THAILAND": 20
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2240,
+      "Proc_B_缝纫": 3360,
+      "Proc_C_整烫": 1400
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_089",
+    "customer": "客户_K3",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 1256,
+    "due_date": "2025-11-20",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 43
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1256,
+      "Proc_B_缝纫": 1507
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_090",
+    "customer": "客户_L3",
+    "product_type": "裤子",
+    "style": "SS26-工装裤-003",
+    "quantity": 5885,
+    "due_date": "2025-12-05",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 40,
+      "THAILAND": 42
+    },
+    "production_lead_time": 3,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 5885,
+      "Proc_B_缝纫": 7062
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_091",
+    "customer": "客户_M3",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 800,
+    "due_date": "2025-10-14",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 41
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 800,
+      "Proc_B_缝纫": 1200
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_092",
+    "customer": "客户_N3",
+    "product_type": "衬衫",
+    "style": "SS26-短袖衬衫-005",
+    "quantity": 2800,
+    "due_date": "2026-03-01",
+    "material_purchasing_lead_time": 25,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 39,
+      "THAILAND": 37
+    },
+    "production_lead_time": 8,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2240,
+      "Proc_B_缝纫": 3360,
+      "Proc_C_整烫": 1400
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_093",
+    "customer": "客户_O3",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 2800,
+    "due_date": "2026-02-17",
+    "material_purchasing_lead_time": 13,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 21,
+      "THAILAND": 39
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2240,
+      "Proc_B_缝纫": 3360,
+      "Proc_C_整烫": 1400
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_094",
+    "customer": "客户_P3",
+    "product_type": "裤子",
+    "style": "AW25-休闲裤-008",
+    "quantity": 1836,
+    "due_date": "2026-02-09",
+    "material_purchasing_lead_time": 7,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 29,
+      "THAILAND": 48
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1836,
+      "Proc_B_缝纫": 2203,
+      "Proc_C_整烫": 734
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_095",
+    "customer": "客户_Q3",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 2253,
+    "due_date": "2026-03-24",
+    "material_purchasing_lead_time": 20,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 44,
+      "THAILAND": 20
+    },
+    "production_lead_time": 6,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2253,
+      "Proc_B_缝纫": 2703
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_096",
+    "customer": "客户_R3",
+    "product_type": "衬衫",
+    "style": "AW25-法兰绒-009",
+    "quantity": 3500,
+    "due_date": "2026-01-20",
+    "material_purchasing_lead_time": 18,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 49,
+      "THAILAND": 48
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2800,
+      "Proc_B_缝纫": 4200,
+      "Proc_C_整烫": 1750
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_097",
+    "customer": "客户_S3",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 1184,
+    "due_date": "2025-11-20",
+    "material_purchasing_lead_time": 11,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 35
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 1184,
+      "Proc_B_缝纫": 1420
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_098",
+    "customer": "客户_T3",
+    "product_type": "裤子",
+    "style": "SS26-牛仔裤-011",
+    "quantity": 5604,
+    "due_date": "2026-02-14",
+    "material_purchasing_lead_time": 17,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 24,
+      "THAILAND": 37
+    },
+    "production_lead_time": 5,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 5604,
+      "Proc_B_缝纫": 6724
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_099",
+    "customer": "客户_U3",
+    "product_type": "外套",
+    "style": "AW26-棉服-004",
+    "quantity": 2500,
+    "due_date": "2025-10-15",
+    "material_purchasing_lead_time": 23,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 42,
+      "THAILAND": 22
+    },
+    "production_lead_time": 7,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 2500,
+      "Proc_B_缝纫": 3750
+    },
+    "eligible_factories": [
+      "F_CN_01",
+      "F_TH_01"
+    ]
+  },
+  {
+    "order_id": "ORD_100",
+    "customer": "客户_V3",
+    "product_type": "衬衫",
+    "style": "SS26-短袖衬衫-005",
+    "quantity": 5000,
+    "due_date": "2025-12-05",
+    "material_purchasing_lead_time": 8,
+    "material_transportation_to_region_lead_time": {
+      "CHINA": 39,
+      "THAILAND": 43
+    },
+    "production_lead_time": 4,
+    "total_process_capacity": {
+      "Proc_A_裁剪": 4000,
+      "Proc_B_缝纫": 6000,
+      "Proc_C_整烫": 2500
+    },
+    "eligible_factories": [
+      "F_TH_01"
+    ]
+  }
+]
