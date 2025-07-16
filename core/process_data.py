@@ -6,7 +6,7 @@ from datetime import datetime, date
 from typing import List, Dict, Any, Set
 
 # 从同级目录的 load_data 模块中导入我们定义的数据类
-from .load_data import Factory, Order, CapacityPeriod, ProductionEfficiency
+from .load_data import Factory, Order
 
 
 # -----------------------------------------------------------------------------
@@ -56,8 +56,8 @@ def _get_efficiency_for_order(order: Order, factory: Factory) -> float:
     """
     # 检查该工厂是否有该产品品类的效率定义
     if order.product_type not in factory.production_efficiencies:
-        logging.warning(
-            f"工厂 {factory.factory_id} 未找到产品品类 '{order.product_type}' 的效率定义，将使用默认效率 1.0。")
+        # logging.warning(
+        #     f"工厂 {factory.factory_id} 未找到产品品类 '{order.product_type}' 的效率定义，将使用默认效率 1.0。")
         return 1.0
 
     # 寻找订单数量所在的效率区间
@@ -66,8 +66,8 @@ def _get_efficiency_for_order(order: Order, factory: Factory) -> float:
         if tier.min_quantity <= order.quantity <= tier.max_quantity:
             return tier.efficiency
 
-    logging.warning(f"订单 {order.order_id} (数量: {order.quantity}) 在工厂 {factory.factory_id} "
-                    f"未找到匹配的数量效率区间，将使用默认效率 1.0。")
+    # logging.warning(f"订单 {order.order_id} (数量: {order.quantity}) 在工厂 {factory.factory_id} "
+    #                 f"未找到匹配的数量效率区间，将使用默认效率 1.0。")
     return 1.0
 
 

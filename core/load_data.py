@@ -3,11 +3,11 @@
 import json
 import logging  # 引入日志模块
 from dataclasses import dataclass, field
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 
 # -----------------------------------------------------------------------------
-# 1. 定义数据类 (Data Classes) - 此部分无变化
+# 1. 定义数据类 (Data Classes)
 # -----------------------------------------------------------------------------
 
 @dataclass
@@ -45,6 +45,8 @@ class Order:
     production_lead_time: int
     total_process_capacity: Dict[str, int]
     eligible_factories: List[str]
+    # Optional 表示这个字段是可选的，可以不存在或为None
+    fixed_assignment: Optional[Dict[str, str]] = None
 
 
 # -----------------------------------------------------------------------------
