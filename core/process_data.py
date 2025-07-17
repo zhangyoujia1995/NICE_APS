@@ -70,6 +70,77 @@ def _get_efficiency_for_order(order: Order, factory: Factory) -> float:
     #                 f"未找到匹配的数量效率区间，将使用默认效率 1.0。")
     return 1.0
 
+def _aggregate_data_for_balancing(aps_input: APSInputData):
+    """
+    遍历数据，计算用于负载均衡目标的聚合值，并收集所有工序。
+    这个函数会直接修改传入的 aps_input 对象。
+    """
+    logging.debug("开始计算聚合数据用于负载均衡...")
+    all_procs: Set[str] = set()
+
+    # 遍历工厂计算总产能, 并收集工序
+    for factory in aps_input.factories:
+        aps_input.factory_total_capacity_by_period[factory.factory_id] = {}
+        for period in factory.capacity_periods:
+            total_capacity = sum(period.capacity_by_process.values())
+            aps_input.factory_total_capacity_by_period[factory.factory_id][period.start_date] = total_capacity
+            all_procs.update(period.capacity_by_process.keys())
+
+    # 遍历订单计算总工作量, 并收集工序
+    for order in aps_input.orders:
+        total_workload = sum(order.total_process_capacity.values())
+        aps_input.order_total_base_workload[order.order_id] = total_workload
+        all_procs.update(order.total_process_capacity.keys())
+
+    aps_input.all_processes = all_procs
+    logging.info(f"数据中所有不重复的工序为: {aps_input.all_processes}")
+
+
+def _validate_data_integrity(aps_input: APSInputData):
+    """
+    执行数据完整性验证，并自动修正不一致的数据。
+    检查订单的合格工厂列表是否真的具备生产该订单所需的所有工序，并且从订单的合格工厂列表中移除不具备生产能力的工厂。
+    """
+    logging.info("开始执行数据完整性验证...")
+
+    for order in aps_input.orders:
+        required_processes = set(order.total_process_capacity.keys())
+        if not required_processes:
+            continue
+
+        # 创建一个新的列表，用于存放通过验证的合格工厂
+        validated_eligible_factories = []
+
+        # 遍历订单原始的合格工厂列表
+        for factory_id in order.eligible_factories:
+            # 检查1：工厂是否存在
+            if factory_id not in aps_input.factory_map:
+                logging.warning(
+                    f"  [数据修正] 订单 '{order.order_id}' 的合格工厂 '{factory_id}' 不存在，已自动从列表中移除。")
+                continue  # 跳过，不加入新列表
+
+            factory = aps_input.factory_map[factory_id]
+
+            # 检查2：工厂是否拥有所有必需的工序
+            factory_processes = set()
+            for period in factory.capacity_periods:
+                factory_processes.update(period.capacity_by_process.keys())
+
+            if not factory_processes.issuperset(required_processes):
+                logging.warning(
+                    f"  [数据修正] 订单 '{order.order_id}' 的合格工厂 '{factory_id}' 缺少所需工序，已自动从列表中移除。"
+                    f" (需要: {required_processes}, 实际拥有: {factory_processes})"
+                )
+                continue  # 跳过，不加入新列表
+
+            # 如果所有检查都通过，则将该工厂ID加入到验证后的列表中
+            validated_eligible_factories.append(factory_id)
+
+        # 用验证后“干净”的列表，覆盖订单对象中原有的列表
+        order.eligible_factories = validated_eligible_factories
+
+    logging.info("数据完整性验证与自动修正完成。")
+
 
 # -----------------------------------------------------------------------------
 # 3. 主函数
@@ -103,30 +174,11 @@ def process_data(factories: List[Factory], orders: List[Order], settings: Dict[s
     aps_input.base_date = datetime.strptime(base_date_str, '%Y-%m-%d').date()
     logging.info(f"计算基准日期 (base_date) 设置为: {aps_input.base_date}")
 
-    # 3. 收集所有工序 & 计算聚合数据用于负载均衡
-    all_procs: Set[str] = set()
+    # 3. 计算用于负载均衡的聚合数据
+    _aggregate_data_for_balancing(aps_input)
 
-    # 3.1 遍历工厂计算总产能, 并收集工序
-    for factory in aps_input.factories:
-        aps_input.factory_total_capacity_by_period[factory.factory_id] = {}
-        for period in factory.capacity_periods:
-            total_capacity = sum(period.capacity_by_process.values())
-            aps_input.factory_total_capacity_by_period[factory.factory_id][period.start_date] = total_capacity
-            # 将该周期的所有工序名称加入到集合中
-            all_procs.update(period.capacity_by_process.keys())
-
-    # 3.2 遍历订单计算总工作量, 并收集工序
-    for order in aps_input.orders:
-        total_workload = sum(order.total_process_capacity.values())
-        aps_input.order_total_base_workload[order.order_id] = total_workload
-        # 将该订单的所有工序名称加入到集合中
-        all_procs.update(order.total_process_capacity.keys())
-
-    aps_input.all_processes = all_procs
-    logging.info(f"收据数据中所有不重复的工序为: {aps_input.all_processes}")
-
-    # 4. 可以在此添加更多的预处理逻辑...
-    #    例如: 验证订单的可生产工厂是否存在于工厂列表中等。
+    # 4. 订单可生产工厂验证
+    _validate_data_integrity(aps_input)
 
     logging.info("数据预处理完成。")
     return aps_input
