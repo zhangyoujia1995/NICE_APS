@@ -6,8 +6,63 @@ from typing import Dict, Any
 
 # 引入 OR-Tools 的核心模型库和我们定义的数据结构
 from ortools.sat.python import cp_model
-from core.process_data import APSInputData
+from core.process_data import APSInputData, _get_efficiency_for_order
 from core.variable_registry import VariableDict
+
+
+def calculate_and_log_kpis(
+        solver: cp_model.CpSolver,
+        data: APSInputData,
+        variables: VariableDict
+):
+    """
+    计算并记录关键性能指标(KPI)，例如工厂负载率。
+
+    Args:
+        solver (cp_model.CpSolver): 已求解的求解器实例。
+        data (APSInputData): 预处理后的数据容器。
+        variables (VariableDict): 决策变量字典。
+    """
+    logging.info("=" * 20 + " 7. 计算并输出KPI " + "=" * 20)
+    print("-" * 80)
+    logging.info("工厂周期性负载率 (已分配工作量 / 总产能):")
+
+    # 遍历每个工厂来计算其KPI
+    for factory in data.factories:
+        factory_id = factory.factory_id
+        logging.info(f"\n--- 工厂: {factory_id} ---")
+
+        # 遍历该工厂的每一个周期
+        for period in factory.capacity_periods:
+            period_start_date = period.start_date
+
+            # 从预处理数据中获取该周期的总产能
+            total_capacity = data.factory_total_capacity_by_period.get(factory_id, {}).get(period_start_date, 0)
+
+            if total_capacity == 0:
+                logging.info(f"  - 周期 {period_start_date}: 0.0% (总产能为 0)")
+                continue
+
+            # 计算该周期被分配的总工作量
+            total_assigned_workload = 0
+            for order in data.orders:
+                if (order.order_id in variables and
+                        factory_id in variables[order.order_id] and
+                        period_start_date in variables[order.order_id][factory_id] and
+                        solver.Value(variables[order.order_id][factory_id][period_start_date]) == 1):
+                    efficiency = _get_efficiency_for_order(order, factory)
+                    base_workload = data.order_total_base_workload[order.order_id]
+                    actual_workload = int(base_workload / efficiency)
+                    total_assigned_workload += actual_workload
+
+            # 计算并格式化负载率
+            load_rate = (total_assigned_workload / total_capacity) if total_capacity > 0 else 0
+
+            # 这一行日志同时包含了百分比、已分配工作量和总产能
+            logging.info(
+                f"  - 周期 {period_start_date}: {load_rate:.1%} (已分配: {total_assigned_workload} / 总计: {int(total_capacity)})")
+
+    print("-" * 80)
 
 
 def process_and_log_results(
@@ -90,6 +145,9 @@ def process_and_log_results(
         print("-" * 80)
         logging.info(f"总共为 {assigned_orders_count} / {len(data.orders)} 个订单找到了排程。")
         logging.info(f"最终目标值: {solver.ObjectiveValue()}")
+
+        # 调用KPI计算和打印函数
+        calculate_and_log_kpis(solver, data, variables)
 
     else:
         logging.warning("模型无解或求解失败，无排程结果可输出。")

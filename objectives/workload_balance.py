@@ -20,7 +20,7 @@ def add_workload_balance_objective(
 ) -> cp_model.LinearExpr:
     """
     添加“工厂负荷均衡”的目标项。
-    目标是最小化所有工厂周期中，最大负载率和最小负载率的差值。
+    目标是最小化所有【已使用】工厂周期中，最大负载率和最小负载率的差值。
 
     Args:
         model (cp_model.CpModel): OR-Tools CP-SAT 的模型实例。
@@ -30,12 +30,15 @@ def add_workload_balance_objective(
     Returns:
         cp_model.LinearExpr: 一个代表了“负载率差异”的线性表达式。
     """
-    logging.info("开始添加“工厂负荷均衡”目标项...")
+    logging.info("开始添加“工厂负荷均衡”目标项 (排除0负载)...")
 
     # 1. 创建全局的最大/最小负载率（已缩放）辅助变量
     # 范围从 0 到 SCALING_FACTOR (即 0% 到 100%)，可以适当放大范围以允许超载
     max_load_ratio_scaled = model.NewIntVar(0, SCALING_FACTOR * 2, f"max_load_ratio_scaled_x{SCALING_FACTOR}")
     min_load_ratio_scaled = model.NewIntVar(0, SCALING_FACTOR * 2, f"min_load_ratio_scaled_x{SCALING_FACTOR}")
+
+    # 确保min总是小于等于max，这在处理空集时能保证模型的稳定性
+    model.Add(min_load_ratio_scaled <= max_load_ratio_scaled)
 
     # 遍历每一个工厂和每一个周期，建立关联约束
     for factory in data.factories:
@@ -67,13 +70,20 @@ def add_workload_balance_objective(
 
             total_workload_expr = sum(total_workload_expr_list)
 
-            # --- 2. 添加核心的 Minimax 约束 ---
-            # 通过交叉相乘，避免在模型中出现除法
+            # --- 创建“周期被使用”的指示变量 ---
+            is_used_fp = model.NewBoolVar(f"is_used_{factory.factory_id}_{period_start_date}")
+
+            # 链接指示变量与工作量：如果总工作量>0，则 is_used_fp 必须为1
+            model.Add(total_workload_expr > 0).OnlyEnforceIf(is_used_fp)
+            # 链接指示变量与工作量：如果总工作量=0，则 is_used_fp 必须为0
+            model.Add(total_workload_expr == 0).OnlyEnforceIf(is_used_fp.Not())
+
+            # --- 添加 Minimax 约束 ---
             # 约束1: max_load_ratio_scaled >= (total_workload_expr / total_capacity) * SCALING_FACTOR
             model.Add(max_load_ratio_scaled * int(total_capacity) >= total_workload_expr * SCALING_FACTOR)
 
             # 约束2: min_load_ratio_scaled <= (total_workload_expr / total_capacity) * SCALING_FACTOR
-            model.Add(min_load_ratio_scaled * int(total_capacity) <= total_workload_expr * SCALING_FACTOR)
+            model.Add(min_load_ratio_scaled * int(total_capacity) <= total_workload_expr * SCALING_FACTOR).OnlyEnforceIf(is_used_fp)
 
     # 3. 返回代表不均衡程度的目标项
     imbalance_cost = max_load_ratio_scaled - min_load_ratio_scaled

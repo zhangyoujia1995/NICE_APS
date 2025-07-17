@@ -1,15 +1,16 @@
 {
   "data_paths": {
-    "order_data_path": "data/orders.json",
-    "factory_data_path": "data/factories.json"
+    "order_data_path": "data/test_orders.json",
+    "factory_data_path": "data/test_factories.json"
   },
   "output_paths": {
     "result_path": "output/schedule_result.json",
     "kpi_path": "output/kpi_summary.json"
   },
   "run_config": {
-    "base_date": "2025-06-30",
-    "solver_time_limit_seconds": 60
+    "base_date": "2025-08-01",
+    "solver_time_limit_seconds": 300,
+    "relative_gap_limit": 0.03
   },
   "active_constraints": [
     "order_unique_assign",

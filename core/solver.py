@@ -28,6 +28,17 @@ class SATSolver:
         #    这是执行求解过程的“引擎”。
         self.solver = cp_model.CpSolver()
 
+        run_config = settings.get('run_config', {})
+
+        # 设置求解时间上限
+        time_limit = run_config.get('solver_time_limit_seconds', 60)
+        self.solver.parameters.max_time_in_seconds = time_limit
+
+        # 设置相对差距限制。当最优解与下界的差距小于这个值时，停止求解。
+        relative_gap = run_config.get('relative_gap_limit', 0.0)  # 默认为0，即不启用
+        if relative_gap > 0:
+            self.solver.parameters.relative_gap_limit = relative_gap
+
         # 设置此参数为 True，求解器将在求解过程中打印详细的日志。
         self.solver.parameters.log_search_progress = True
         # 设置并行求解的核心数量
@@ -38,7 +49,7 @@ class SATSolver:
         time_limit = settings.get('run_config', {}).get('solver_time_limit_seconds', 60)
         self.solver.parameters.max_time_in_seconds = time_limit
 
-        logging.info(f"求解器已初始化。求解时间上限设置为: {time_limit} 秒。")
+        logging.info(f"求解器已初始化。求解时间上限设置为: {time_limit} 秒, 相对差距限制: {relative_gap}.")
 
     def get_model(self) -> cp_model.CpModel:
         """
