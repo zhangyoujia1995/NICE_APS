@@ -38,14 +38,14 @@ def set_combined_objective(
 
     # 3. 对目标项进行加权和缩放，构建最终的整数线性目标函数
     total_objective_terms = []
+    total_orders = len(data.orders)
 
     if w_tardy > 0:
-        # 修正：不再使用硬编码的1000，而是直接引用导入的 SCALING_FACTOR
         # 这确保了两个目标的量级始终是关联和同步的
-        total_objective_terms.append(int(w_tardy * SCALING_FACTOR) * tardiness_term)
+        total_objective_terms.append(int(w_tardy) * tardiness_term * SCALING_FACTOR)
 
     if w_balance > 0:
-        total_objective_terms.append(int(w_balance) * balance_term)
+        total_objective_terms.append(int(w_balance) * balance_term * total_orders)
 
     # 4. 将加权后的所有目标项求和，并设置为模型要最小化的目标
     if total_objective_terms:
