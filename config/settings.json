@@ -4,12 +4,12 @@
     "factory_data_path": "data/test_factories.json"
   },
   "output_paths": {
-    "result_path": "output/schedule_result.json",
+    "csv_result_path": "output/schedule_result.csv",
     "kpi_path": "output/kpi_summary.json"
   },
   "run_config": {
     "base_date": "2025-08-01",
-    "solver_time_limit_seconds": 900,
+    "solver_time_limit_seconds": 300,
     "relative_gap_limit": 0.02
   },
   "active_constraints": [
@@ -18,7 +18,7 @@
     "material_lead_time"
   ],
   "objective_weights": {
-    "tardiness": 0.5,
+    "tardiness": 1,
     "workload_balance": 0
   }
 }

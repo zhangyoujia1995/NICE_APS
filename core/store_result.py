@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import logging
+import os
+import pandas as pd
 from datetime import datetime, timedelta, date
 from typing import Dict, Any, List
 from dataclasses import dataclass
@@ -80,6 +82,65 @@ def calculate_and_log_kpis(
                     f"    - 周期 {period_start_date}: {load_rate:.1%} (已分配: {assigned_workload} / 总计: {int(total_capacity)})")
             else:
                 logging.info(f"    - 周期 {period_start_date}: 0.0% (总产能为 0)")
+
+
+# --- 将结果保存为csv文件的函数 ---
+def save_results_to_csv(
+        schedule_results: List[ScheduleResultItem],
+        data: APSInputData,
+        settings: Dict[str, Any]
+):
+    """
+    将排程结果列表转换为pandas DataFrame 并保存为CSV文件。
+    """
+    output_path = settings.get("output_paths", {}).get("csv_result_path")  # 读取新的配置键
+    if not output_path:
+        logging.warning("配置文件中未指定 'csv_result_path'，跳过CSV文件保存。")
+        return
+
+    logging.info(f"开始将结果保存到CSV文件: {output_path} ...")
+
+    if not schedule_results:
+        logging.info("没有排程结果可供保存。")
+        return
+
+    # 1. 转换数据 (逻辑无变化)
+    rows_data = []
+    for r in schedule_results:
+        row = {
+            "订单ID": r.order.order_id,
+            "客户": r.order.customer,
+            "产品品类": r.order.product_type,
+            "订单数量": r.order.quantity,
+            "要求交期": r.order.due_date,
+            "分配工厂ID": r.assigned_factory_id,
+            "工厂区域": data.factory_map[r.assigned_factory_id].region,
+            "计划生产周期(开始)": r.assigned_period_start,
+            "计划生产周期(结束)": r.assigned_period_end,
+            "是否延误": "是" if r.is_tardy else "否",
+            "延误天数": r.days_tardy,
+            "物料就绪日期": r.material_ready_date.strftime('%Y-%m-%d'),
+            "物料最晚确认日期": r.latest_confirmation_date.strftime('%Y-%m-%d')
+        }
+        rows_data.append(row)
+
+    # 2. 创建DataFrame (逻辑无变化)
+    try:
+        df = pd.DataFrame(rows_data)
+
+        # 3. 确保输出目录存在 (逻辑无变化)
+        output_dir = os.path.dirname(output_path)
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
+
+        # 4. 变更：写入到CSV文件
+        #    使用 utf-8-sig 编码可以确保Excel正确识别并显示中文字符
+        df.to_csv(output_path, index=False, encoding='utf-8-sig')
+
+        logging.info(f"排程结果已成功保存到: {output_path}")
+
+    except Exception as e:
+        logging.error(f"保存CSV文件时发生错误: {e}", exc_info=True)
 
 
 def process_and_log_results(
@@ -167,3 +228,6 @@ def process_and_log_results(
 
     # --- 步骤3：基于解析后的结果列表，计算和打印KPI ---
     calculate_and_log_kpis(schedule_results, data)
+
+    # --- 步骤4：将结果保存到文件 ---
+    save_results_to_csv(schedule_results, data, data.settings)
