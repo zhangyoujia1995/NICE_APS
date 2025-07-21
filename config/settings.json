@@ -9,8 +9,8 @@
   },
   "run_config": {
     "base_date": "2025-08-01",
-    "solver_time_limit_seconds": 300,
-    "relative_gap_limit": 0.03
+    "solver_time_limit_seconds": 900,
+    "relative_gap_limit": 0.02
   },
   "active_constraints": [
     "order_unique_assign",
@@ -18,7 +18,7 @@
     "material_lead_time"
   ],
   "objective_weights": {
-    "tardiness": 1,
-    "workload_balance": 1
+    "tardiness": 0.5,
+    "workload_balance": 0
   }
 }

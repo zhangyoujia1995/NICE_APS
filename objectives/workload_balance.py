@@ -19,7 +19,7 @@ def add_workload_balance_objective(
         variables: VariableDict
 ) -> cp_model.LinearExpr:
     """
-    添加“工厂负荷均衡”的目标项。
+    添加“工厂负荷相关”的目标项。
     目标是最小化所有【已使用】工厂周期中，最大负载率和最小负载率的差值。
 
     Args:
@@ -28,7 +28,7 @@ def add_workload_balance_objective(
         variables (VariableDict): 包含了所有决策变量的嵌套字典。
 
     Returns:
-        cp_model.LinearExpr: 一个代表了“负载率差异”的线性表达式。
+        cp_model.LinearExpr: 一个代表了综合“负荷相关成本”的线性表达式。
     """
     logging.info("开始添加“工厂负荷均衡”目标项 (排除0负载)...")
 
@@ -85,8 +85,14 @@ def add_workload_balance_objective(
             # 约束2: min_load_ratio_scaled <= (total_workload_expr / total_capacity) * SCALING_FACTOR
             model.Add(min_load_ratio_scaled * int(total_capacity) <= total_workload_expr * SCALING_FACTOR).OnlyEnforceIf(is_used_fp)
 
-    # 3. 返回代表不均衡程度的目标项
+    # --- 在函数内部组合两个子目标 ---
+    # 子目标B1: 最小化差异 (均衡)
     imbalance_cost = max_load_ratio_scaled - min_load_ratio_scaled
+    # 子目标B2: 最小化最大值 (削峰)
+    max_load_cost = max_load_ratio_scaled
+
+    # 将两个子目标以50/50的比例组合成最终的“不均衡成本”
+    combined_balance_cost = 0.5 * imbalance_cost + 0.5 * max_load_cost
 
     logging.info("“工厂负荷均衡”目标项添加完成。")
-    return imbalance_cost
+    return combined_balance_cost

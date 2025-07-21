@@ -151,17 +151,17 @@ def process_and_log_results(
             logging.warning(f"  [-] 订单 '{order_id}' 未找到分配方案。")
 
     # --- 步骤2：基于解析后的结果列表，打印详细日志 ---
-    logging.info("模型找到可行解，详细排程结果如下:")
-    print("-" * 80)
-    for result in schedule_results:
-        tardy_info = f" (延误 {result.days_tardy} 天!)" if result.is_tardy else ""
-        log_msg = (
-            f"  [+] 订单 '{result.order.order_id}' (数量: {result.order.quantity}, 要求交期: {result.order.due_date}{tardy_info})\n"
-            f"      ├── 分配至: 工厂='{result.assigned_factory_id}', 生产周期: {result.assigned_period_start} to {result.assigned_period_end}\n"
-            f"      └── 关键日期: 物料就绪日='{result.material_ready_date.strftime('%Y-%m-%d')}', 最晚确认日='{result.latest_confirmation_date.strftime('%Y-%m-%d')}'"
-        )
-        logging.info(log_msg)
-    print("-" * 80)
+    # logging.info("模型找到可行解，详细排程结果如下:")
+    # print("-" * 80)
+    # for result in schedule_results:
+    #     tardy_info = f" (延误 {result.days_tardy} 天!)" if result.is_tardy else ""
+    #     log_msg = (
+    #         f"  [+] 订单 '{result.order.order_id}' (数量: {result.order.quantity}, 要求交期: {result.order.due_date}{tardy_info})\n"
+    #         f"      ├── 分配至: 工厂='{result.assigned_factory_id}', 生产周期: {result.assigned_period_start} to {result.assigned_period_end}\n"
+    #         f"      └── 关键日期: 物料就绪日='{result.material_ready_date.strftime('%Y-%m-%d')}', 最晚确认日='{result.latest_confirmation_date.strftime('%Y-%m-%d')}'"
+    #     )
+    #     logging.info(log_msg)
+    # print("-" * 80)
     logging.info(f"总共为 {len(schedule_results)} / {len(data.orders)} 个订单找到了排程。")
     logging.info(f"最终目标值: {solver.ObjectiveValue()}")
 
