@@ -28,8 +28,8 @@ def set_combined_objective(
 
     # 1. 从配置文件中获取各个目标的权重
     weights = data.settings.get('objective_weights', {})
-    w_tardy = weights.get('tardiness', 1.0)
-    w_balance = weights.get('workload_balance', 1.0)
+    w_tardy = weights.get('tardiness', 0)
+    w_balance = weights.get('workload_balance', 0)
     logging.info(f"目标权重 - 延误惩罚: {w_tardy}, 负载均衡: {w_balance}")
 
     total_objective_terms = []
