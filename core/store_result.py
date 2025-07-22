@@ -24,6 +24,7 @@ class ScheduleResultItem:
     assigned_period_end: str
     is_tardy: bool
     days_tardy: int
+    deviation_days: int
     material_ready_date: date
     latest_confirmation_date: date
 
@@ -34,7 +35,7 @@ def calculate_and_save_kpis(
         settings: Dict[str, Any]
 ):
     """
-    计算KPI，并将结果保存为JSON文件。
+    计算所有KPI，并将结果整合后保存为单一的JSON文件。
     """
     output_path = settings.get("output_paths", {}).get("kpi_output_path")
     if not output_path:
@@ -43,7 +44,21 @@ def calculate_and_save_kpis(
 
     logging.info(f"开始计算KPI并准备保存到: {output_path} ...")
 
-    kpi_results = {}
+    # --- a. 计算交付表现KPI ---
+    total_scheduled_orders = len(schedule_results)
+    tardy_orders_count = sum(1 for r in schedule_results if r.is_tardy)
+    total_absolute_deviation_days = sum(r.deviation_days for r in schedule_results)
+
+    delivery_kpis = {
+        "total_scheduled_orders": total_scheduled_orders,
+        "tardy_orders": tardy_orders_count,
+        "on_time_delivery_rate": (
+                                             total_scheduled_orders - tardy_orders_count) / total_scheduled_orders if total_scheduled_orders > 0 else 0,
+        "tardiness_rate": tardy_orders_count / total_scheduled_orders if total_scheduled_orders > 0 else 0,
+        "average_absolute_deviation_days": total_absolute_deviation_days / total_scheduled_orders if total_scheduled_orders > 0 else 0
+    }
+
+    # --- b. 计算工厂负载率KPI ---
     workload_by_period = {}
     for r in schedule_results:
         key = (r.assigned_factory_id, r.assigned_period_start)
@@ -53,35 +68,34 @@ def calculate_and_save_kpis(
         actual_workload = int(base_workload / efficiency)
         workload_by_period[key] = workload_by_period.get(key, 0) + actual_workload
 
+    factory_kpis = {}
     for factory in data.factories:
         factory_id = factory.factory_id
         period_load_rates = []
         load_rate_by_period_dict = {}
-
         for period in factory.capacity_periods:
-            period_start_date = period.start_date
-            total_capacity = data.factory_total_capacity_by_period.get(factory_id, {}).get(period_start_date, 0)
-            assigned_workload = workload_by_period.get((factory_id, period_start_date), 0)
+            p_start = period.start_date
+            total_capacity = data.factory_total_capacity_by_period.get(factory_id, {}).get(p_start, 0)
+            assigned_workload = workload_by_period.get((factory_id, p_start), 0)
             load_rate = (assigned_workload / total_capacity) if total_capacity > 0 else 0
-
             period_load_rates.append(load_rate)
-            load_rate_by_period_dict[period_start_date] = round(load_rate, 3)
+            load_rate_by_period_dict[p_start] = round(load_rate, 3)
 
-        # 计算新的KPI统计值
-        active_period_rates = [r for r in period_load_rates if r > 0]
-        max_load = max(period_load_rates) if period_load_rates else 0
-        min_load_active = min(active_period_rates) if active_period_rates else 0
-        avg_load = sum(period_load_rates) / len(period_load_rates) if period_load_rates else 0
-
-        kpi_results[factory_id] = {
-            "max_load_rate": round(max_load, 3),
-            "min_load_rate_active_periods": round(min_load_active, 3),
-            "average_load_rate": round(avg_load, 3),
+        active_period_rates = [r for r in period_load_rates if r > 0.001]
+        factory_kpis[factory_id] = {
+            "max_load_rate": round(max(period_load_rates), 3) if period_load_rates else 0,
+            "min_load_rate_active_periods": round(min(active_period_rates), 3) if active_period_rates else 0,
+            "average_load_rate": round(sum(period_load_rates) / len(period_load_rates), 3) if period_load_rates else 0,
             "load_rate_by_period": load_rate_by_period_dict
         }
 
-    # 调用通用函数保存KPI JSON文件
-    save_data_to_json(kpi_results, output_path)
+    # --- c. 组合所有KPI并保存 ---
+    final_kpi_report = {
+        "delivery_performance": delivery_kpis,
+        "factory_utilization": factory_kpis
+    }
+
+    save_data_to_json(final_kpi_report, output_path)
 
 
 # --- 将结果保存为csv文件的函数 ---
@@ -116,6 +130,7 @@ def save_schedule_to_csv(
             "要求交期": r.order.due_date,
             "分配工厂ID": r.assigned_factory_id,
             "工厂区域": data.factory_map[r.assigned_factory_id].region,
+            "计划开始周期": r.assigned_period_start,
             "计划完成日期": r.assigned_period_end,
             "是否延误": "是" if r.is_tardy else "否",
             "与交期偏差天数": deviation_days,
@@ -172,6 +187,9 @@ def process_and_save_results(
                     is_tardy = completion_date_obj > due_date_obj
                     days_tardy = (completion_date_obj - due_date_obj).days if is_tardy else 0
 
+                    # 计算绝对偏差天数
+                    deviation_days = abs((completion_date_obj - due_date_obj).days)
+
                     # 计算关键日期
                     material_ready_date = period_start_date_obj - timedelta(days=order_obj.production_lead_time)
                     transport_lt = order_obj.material_transportation_to_region_lead_time.get(factory_obj.region, 0)
@@ -186,6 +204,7 @@ def process_and_save_results(
                         assigned_period_end=period_end_date_map[factory_id][period_start_date_str],
                         is_tardy=is_tardy,
                         days_tardy=days_tardy,
+                        deviation_days=deviation_days,
                         material_ready_date=material_ready_date,
                         latest_confirmation_date=latest_confirmation_date
                     )
