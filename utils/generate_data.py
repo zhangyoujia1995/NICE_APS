@@ -6,6 +6,8 @@ import os
 from typing import List, Dict
 from datetime import datetime, timedelta
 
+from .file_handler import save_data_to_json
+
 # --- 1. 配置生成参数 ---
 # 您可以在这里调整，以生成不同特性和规模的数据
 CONFIG = {
@@ -26,23 +28,6 @@ CONFIG = {
     },
     "cutting_process_probability": 0.7  # 定义裁剪工序的拥有概率
 }
-
-
-def save_data_to_json(data_to_save: List[Dict], output_path: str):
-    """
-    将列表数据以JSON格式保存到指定文件。
-    会自动创建不存在的目录。
-    """
-    try:
-        output_dir = os.path.dirname(output_path)
-        if output_dir:  # 只有当路径包含目录时才创建
-            os.makedirs(output_dir, exist_ok=True)
-
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(data_to_save, f, indent=2, ensure_ascii=False)
-        print(f"数据成功保存至: '{output_path}'")
-    except Exception as e:
-        print(f"写入文件 '{output_path}' 时发生错误: {e}")
 
 
 def generate_factories_data():

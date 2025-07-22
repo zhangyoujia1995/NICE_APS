@@ -5,7 +5,7 @@
   },
   "output_paths": {
     "csv_result_path": "output/schedule_result.csv",
-    "kpi_path": "output/kpi_summary.json"
+    "kpi_output_path": "output/kpi_report.json"
   },
   "run_config": {
     "base_date": "2025-08-01",

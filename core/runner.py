@@ -9,7 +9,7 @@ from .process_data import process_data
 from .variable_registry import create_variables, VariableDict
 from .solver import SATSolver
 from ortools.sat.python import cp_model
-from .store_result import process_and_log_results
+from .store_result import process_and_save_results
 
 # --- 引入所有约束和目标模块 ---
 # 约束
@@ -92,7 +92,7 @@ class APSRunner:
 
     def _process_results(self, solver_instance: cp_model.CpSolver, variables: VariableDict):
         """处理并输出结果。"""
-        process_and_log_results(solver_instance, self.aps_input_data, variables)
+        process_and_save_results(solver_instance, self.aps_input_data, variables)
 
     def run(self):
         """
