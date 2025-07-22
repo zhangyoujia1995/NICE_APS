@@ -33,7 +33,7 @@ def add_workload_balance_objective(
     logging.info("开始添加“工厂负荷均衡”目标项 (排除0负载)...")
 
     # 1. 创建全局的最大/最小负载率（已缩放）辅助变量
-    # 范围从 0 到 SCALING_FACTOR (即 0% 到 100%)，可以适当放大范围以允许超载
+    # 范围从 0 到 SCALING_FACTOR (即 0% 到 1000%)，可以适当放大范围以允许超载
     max_load_ratio_scaled = model.NewIntVar(0, SCALING_FACTOR * 2, f"max_load_ratio_scaled_x{SCALING_FACTOR}")
     min_load_ratio_scaled = model.NewIntVar(0, SCALING_FACTOR * 2, f"min_load_ratio_scaled_x{SCALING_FACTOR}")
 
