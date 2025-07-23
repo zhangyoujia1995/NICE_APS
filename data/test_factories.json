@@ -1,573 +1,33 @@
 [
   {
-    "factory_id": "F_TH_01",
-    "region": "THAILAND",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1658,
-          "efficiency": 0.58
-        },
-        {
-          "min_quantity": 1659,
-          "max_quantity": 99999,
-          "efficiency": 0.63
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2281,
-          "efficiency": 0.69
-        },
-        {
-          "min_quantity": 2282,
-          "max_quantity": 4143,
-          "efficiency": 0.7
-        },
-        {
-          "min_quantity": 4144,
-          "max_quantity": 99999,
-          "efficiency": 0.74
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1965,
-          "efficiency": 0.7
-        },
-        {
-          "min_quantity": 1966,
-          "max_quantity": 3807,
-          "efficiency": 0.75
-        },
-        {
-          "min_quantity": 3808,
-          "max_quantity": 99999,
-          "efficiency": 0.81
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 45338
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 45943
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 39959
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 43422
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 43761
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 36560
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 38934
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 45054
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 37151
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 36958
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 45044
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 43250
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 42437
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 41028
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 38516
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 36263
-        }
-      }
-    ]
-  },
-  {
     "factory_id": "F_CA_01",
     "region": "CAMBODIA",
     "production_efficiencies": {
       "外套": [
         {
           "min_quantity": 0,
-          "max_quantity": 1710,
-          "efficiency": 0.77
-        },
-        {
-          "min_quantity": 1711,
-          "max_quantity": 3320,
-          "efficiency": 0.83
-        },
-        {
-          "min_quantity": 3321,
-          "max_quantity": 99999,
-          "efficiency": 0.85
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2933,
-          "efficiency": 0.7
-        },
-        {
-          "min_quantity": 2934,
-          "max_quantity": 5922,
-          "efficiency": 0.71
-        },
-        {
-          "min_quantity": 5923,
-          "max_quantity": 99999,
-          "efficiency": 0.72
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2572,
-          "efficiency": 0.71
-        },
-        {
-          "min_quantity": 2573,
-          "max_quantity": 99999,
-          "efficiency": 0.77
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 39017,
-          "裁剪": 32325
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 44764,
-          "裁剪": 31488
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 42603,
-          "裁剪": 26953
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 35596,
-          "裁剪": 29743
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 43205,
-          "裁剪": 27957
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 38031,
-          "裁剪": 34386
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 37458,
-          "裁剪": 27462
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 44600,
-          "裁剪": 26432
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 36847,
-          "裁剪": 31675
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 36280,
-          "裁剪": 29141
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 37754,
-          "裁剪": 30968
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 34428,
-          "裁剪": 26930
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 35929,
-          "裁剪": 30053
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 43034,
-          "裁剪": 34371
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 35240,
-          "裁剪": 27004
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 43338,
-          "裁剪": 29194
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CH_01",
-    "region": "CHINA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1776,
-          "efficiency": 0.66
-        },
-        {
-          "min_quantity": 1777,
-          "max_quantity": 4072,
-          "efficiency": 0.7
-        },
-        {
-          "min_quantity": 4073,
-          "max_quantity": 99999,
-          "efficiency": 0.74
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1953,
-          "efficiency": 0.66
-        },
-        {
-          "min_quantity": 1954,
-          "max_quantity": 3930,
-          "efficiency": 0.7
-        },
-        {
-          "min_quantity": 3931,
-          "max_quantity": 99999,
-          "efficiency": 0.71
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2300,
-          "efficiency": 0.57
-        },
-        {
-          "min_quantity": 2301,
-          "max_quantity": 3861,
-          "efficiency": 0.59
-        },
-        {
-          "min_quantity": 3862,
-          "max_quantity": 99999,
-          "efficiency": 0.6
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 41818,
-          "裁剪": 33093
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 42735,
-          "裁剪": 33755
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 38322,
-          "裁剪": 25698
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 44302,
-          "裁剪": 30979
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 38627,
-          "裁剪": 26499
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 43776,
-          "裁剪": 28488
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 40824,
-          "裁剪": 26633
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 36726,
-          "裁剪": 27233
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 45676,
-          "裁剪": 28680
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 36641,
-          "裁剪": 27318
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 45760,
-          "裁剪": 30134
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 42056,
-          "裁剪": 27552
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 45359,
-          "裁剪": 27391
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 39080,
-          "裁剪": 29102
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 34071,
-          "裁剪": 33615
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 42382,
-          "裁剪": 28263
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_VI_01",
-    "region": "VIETNAM",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2482,
-          "efficiency": 0.79
-        },
-        {
-          "min_quantity": 2483,
-          "max_quantity": 4842,
-          "efficiency": 0.82
-        },
-        {
-          "min_quantity": 4843,
-          "max_quantity": 99999,
-          "efficiency": 0.87
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2735,
+          "max_quantity": 2554,
           "efficiency": 0.64
         },
         {
-          "min_quantity": 2736,
-          "max_quantity": 5287,
-          "efficiency": 0.66
+          "min_quantity": 2555,
+          "max_quantity": 99999,
+          "efficiency": 0.67
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2994,
+          "efficiency": 0.64
         },
         {
-          "min_quantity": 5288,
+          "min_quantity": 2995,
+          "max_quantity": 5657,
+          "efficiency": 0.68
+        },
+        {
+          "min_quantity": 5658,
           "max_quantity": 99999,
           "efficiency": 0.7
         }
@@ -575,13 +35,18 @@
       "衬衫": [
         {
           "min_quantity": 0,
-          "max_quantity": 1952,
-          "efficiency": 0.69
+          "max_quantity": 2459,
+          "efficiency": 0.77
         },
         {
-          "min_quantity": 1953,
+          "min_quantity": 2460,
+          "max_quantity": 5370,
+          "efficiency": 0.82
+        },
+        {
+          "min_quantity": 5371,
           "max_quantity": 99999,
-          "efficiency": 0.71
+          "efficiency": 0.84
         }
       ]
     },
@@ -590,128 +55,128 @@
         "start_date": "2025-08-01",
         "end_date": "2025-08-14",
         "capacity_by_process": {
-          "缝纫": 45354,
-          "裁剪": 32423
+          "缝纫": 45260,
+          "裁剪": 30552
         }
       },
       {
         "start_date": "2025-08-15",
         "end_date": "2025-08-28",
         "capacity_by_process": {
-          "缝纫": 43672,
-          "裁剪": 29113
+          "缝纫": 41249,
+          "裁剪": 30307
         }
       },
       {
         "start_date": "2025-08-29",
         "end_date": "2025-09-11",
         "capacity_by_process": {
-          "缝纫": 34542,
-          "裁剪": 34168
+          "缝纫": 43478,
+          "裁剪": 32122
         }
       },
       {
         "start_date": "2025-09-12",
         "end_date": "2025-09-25",
         "capacity_by_process": {
-          "缝纫": 36317,
-          "裁剪": 32693
+          "缝纫": 44204,
+          "裁剪": 34229
         }
       },
       {
         "start_date": "2025-09-26",
         "end_date": "2025-10-09",
         "capacity_by_process": {
-          "缝纫": 37867,
-          "裁剪": 27032
+          "缝纫": 37706,
+          "裁剪": 32563
         }
       },
       {
         "start_date": "2025-10-10",
         "end_date": "2025-10-23",
         "capacity_by_process": {
-          "缝纫": 41042,
-          "裁剪": 26248
+          "缝纫": 45213,
+          "裁剪": 32878
         }
       },
       {
         "start_date": "2025-10-24",
         "end_date": "2025-11-06",
         "capacity_by_process": {
-          "缝纫": 44541,
-          "裁剪": 33739
+          "缝纫": 42735,
+          "裁剪": 33506
         }
       },
       {
         "start_date": "2025-11-07",
         "end_date": "2025-11-20",
         "capacity_by_process": {
-          "缝纫": 38920,
-          "裁剪": 30578
+          "缝纫": 38942,
+          "裁剪": 30975
         }
       },
       {
         "start_date": "2025-11-21",
         "end_date": "2025-12-04",
         "capacity_by_process": {
-          "缝纫": 45295,
-          "裁剪": 31401
+          "缝纫": 41102,
+          "裁剪": 33708
         }
       },
       {
         "start_date": "2025-12-05",
         "end_date": "2025-12-18",
         "capacity_by_process": {
-          "缝纫": 44071,
-          "裁剪": 32246
+          "缝纫": 42802,
+          "裁剪": 30606
         }
       },
       {
         "start_date": "2025-12-19",
         "end_date": "2026-01-01",
         "capacity_by_process": {
-          "缝纫": 44145,
-          "裁剪": 26032
+          "缝纫": 39858,
+          "裁剪": 32676
         }
       },
       {
         "start_date": "2026-01-02",
         "end_date": "2026-01-15",
         "capacity_by_process": {
-          "缝纫": 36886,
-          "裁剪": 30414
+          "缝纫": 35535,
+          "裁剪": 31000
         }
       },
       {
         "start_date": "2026-01-16",
         "end_date": "2026-01-29",
         "capacity_by_process": {
-          "缝纫": 41808,
-          "裁剪": 26215
+          "缝纫": 44259,
+          "裁剪": 30784
         }
       },
       {
         "start_date": "2026-01-30",
         "end_date": "2026-02-12",
         "capacity_by_process": {
-          "缝纫": 36557,
-          "裁剪": 27808
+          "缝纫": 43723,
+          "裁剪": 25632
         }
       },
       {
         "start_date": "2026-02-13",
         "end_date": "2026-02-26",
         "capacity_by_process": {
-          "缝纫": 40019,
-          "裁剪": 25620
+          "缝纫": 42179,
+          "裁剪": 27565
         }
       },
       {
         "start_date": "2026-02-27",
         "end_date": "2026-03-12",
         "capacity_by_process": {
-          "缝纫": 42553,
-          "裁剪": 32032
+          "缝纫": 37073,
+          "裁剪": 30499
         }
       }
     ]
@@ -723,2097 +188,28 @@
       "外套": [
         {
           "min_quantity": 0,
-          "max_quantity": 1674,
-          "efficiency": 0.58
-        },
-        {
-          "min_quantity": 1675,
-          "max_quantity": 99999,
-          "efficiency": 0.62
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1800,
-          "efficiency": 0.66
-        },
-        {
-          "min_quantity": 1801,
-          "max_quantity": 99999,
-          "efficiency": 0.68
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2618,
-          "efficiency": 0.73
-        },
-        {
-          "min_quantity": 2619,
-          "max_quantity": 99999,
-          "efficiency": 0.76
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 42251,
-          "裁剪": 29558
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 40949,
-          "裁剪": 29303
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 45368,
-          "裁剪": 32953
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 34609,
-          "裁剪": 29122
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 34433,
-          "裁剪": 25869
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 43270,
-          "裁剪": 26941
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 38062,
-          "裁剪": 31431
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 39295,
-          "裁剪": 32307
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 40945,
-          "裁剪": 33523
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 35608,
-          "裁剪": 31911
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 34782,
-          "裁剪": 29689
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 44017,
-          "裁剪": 26464
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 37893,
-          "裁剪": 26274
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 39438,
-          "裁剪": 26197
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 38581,
-          "裁剪": 31190
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 43413,
-          "裁剪": 28717
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_TH_02",
-    "region": "THAILAND",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2260,
-          "efficiency": 0.74
-        },
-        {
-          "min_quantity": 2261,
-          "max_quantity": 4709,
-          "efficiency": 0.76
-        },
-        {
-          "min_quantity": 4710,
-          "max_quantity": 99999,
-          "efficiency": 0.8
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2926,
-          "efficiency": 0.71
-        },
-        {
-          "min_quantity": 2927,
-          "max_quantity": 5112,
-          "efficiency": 0.73
-        },
-        {
-          "min_quantity": 5113,
-          "max_quantity": 99999,
-          "efficiency": 0.75
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1645,
-          "efficiency": 0.76
-        },
-        {
-          "min_quantity": 1646,
-          "max_quantity": 99999,
+          "max_quantity": 2126,
           "efficiency": 0.78
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 37723,
-          "裁剪": 32522
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 44718,
-          "裁剪": 33260
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 45540,
-          "裁剪": 25986
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 40570,
-          "裁剪": 28401
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 37793,
-          "裁剪": 25676
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 45172,
-          "裁剪": 27976
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 43640,
-          "裁剪": 28534
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 38164,
-          "裁剪": 27880
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 39453,
-          "裁剪": 28608
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 45910,
-          "裁剪": 28821
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 40811,
-          "裁剪": 26253
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 37768,
-          "裁剪": 28253
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 43637,
-          "裁剪": 30521
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 39165,
-          "裁剪": 30534
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 34460,
-          "裁剪": 31510
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 36989,
-          "裁剪": 31229
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_TH_03",
-    "region": "THAILAND",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2805,
-          "efficiency": 0.75
         },
         {
-          "min_quantity": 2806,
-          "max_quantity": 5522,
-          "efficiency": 0.76
-        },
-        {
-          "min_quantity": 5523,
-          "max_quantity": 99999,
-          "efficiency": 0.78
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1691,
-          "efficiency": 0.58
-        },
-        {
-          "min_quantity": 1692,
-          "max_quantity": 3570,
-          "efficiency": 0.63
-        },
-        {
-          "min_quantity": 3571,
-          "max_quantity": 99999,
-          "efficiency": 0.64
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2423,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 2424,
-          "max_quantity": 99999,
-          "efficiency": 0.69
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 37581,
-          "裁剪": 26041
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 43832,
-          "裁剪": 33347
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 39635,
-          "裁剪": 31679
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 39524,
-          "裁剪": 32633
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 45234,
-          "裁剪": 31110
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 40931,
-          "裁剪": 31902
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 40697,
-          "裁剪": 27950
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 43033,
-          "裁剪": 29363
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 39542,
-          "裁剪": 33682
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 36297,
-          "裁剪": 32809
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 42161,
-          "裁剪": 30640
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 35747,
-          "裁剪": 31721
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 40667,
-          "裁剪": 29105
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 35488,
-          "裁剪": 33174
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 39797,
-          "裁剪": 32983
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 44680,
-          "裁剪": 33662
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_TH_04",
-    "region": "THAILAND",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1516,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 1517,
-          "max_quantity": 4474,
-          "efficiency": 0.66
-        },
-        {
-          "min_quantity": 4475,
-          "max_quantity": 99999,
-          "efficiency": 0.69
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1990,
-          "efficiency": 0.77
-        },
-        {
-          "min_quantity": 1991,
-          "max_quantity": 99999,
-          "efficiency": 0.8
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1578,
-          "efficiency": 0.61
-        },
-        {
-          "min_quantity": 1579,
-          "max_quantity": 99999,
-          "efficiency": 0.66
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 38731
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 43756
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 44917
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 45927
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 38625
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 45574
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 40052
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 44266
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 37898
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 40397
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 36840
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 37955
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 35163
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 45988
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 44993
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 36765
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CH_02",
-    "region": "CHINA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2718,
-          "efficiency": 0.62
-        },
-        {
-          "min_quantity": 2719,
-          "max_quantity": 5287,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 5288,
-          "max_quantity": 99999,
-          "efficiency": 0.66
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2932,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 2933,
-          "max_quantity": 4616,
-          "efficiency": 0.68
-        },
-        {
-          "min_quantity": 4617,
-          "max_quantity": 99999,
-          "efficiency": 0.7
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2780,
+          "min_quantity": 2127,
+          "max_quantity": 4973,
           "efficiency": 0.79
         },
         {
-          "min_quantity": 2781,
+          "min_quantity": 4974,
           "max_quantity": 99999,
           "efficiency": 0.82
         }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 38593,
-          "裁剪": 33166
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 35334,
-          "裁剪": 29075
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 41774,
-          "裁剪": 25979
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 43377,
-          "裁剪": 26207
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 43931,
-          "裁剪": 27768
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 34115,
-          "裁剪": 27494
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 34414,
-          "裁剪": 28907
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 38237,
-          "裁剪": 26338
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 44442,
-          "裁剪": 32903
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 35481,
-          "裁剪": 33274
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 44848,
-          "裁剪": 31100
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 39747,
-          "裁剪": 29994
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 41174,
-          "裁剪": 33373
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 42350,
-          "裁剪": 28770
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 45759,
-          "裁剪": 33450
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 39354,
-          "裁剪": 30786
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CH_03",
-    "region": "CHINA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1977,
-          "efficiency": 0.67
-        },
-        {
-          "min_quantity": 1978,
-          "max_quantity": 3869,
-          "efficiency": 0.7
-        },
-        {
-          "min_quantity": 3870,
-          "max_quantity": 99999,
-          "efficiency": 0.74
-        }
       ],
       "裤子": [
         {
           "min_quantity": 0,
-          "max_quantity": 2163,
-          "efficiency": 0.68
+          "max_quantity": 2724,
+          "efficiency": 0.56
         },
         {
-          "min_quantity": 2164,
-          "max_quantity": 99999,
-          "efficiency": 0.72
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2579,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 2580,
-          "max_quantity": 99999,
-          "efficiency": 0.67
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 36146
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 43996
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 37063
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 39743
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 34211
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 44962
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 39779
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 34026
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 43678
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 43699
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 39367
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 44321
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 44403
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 41392
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 37509
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 41825
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_VI_02",
-    "region": "VIETNAM",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2526,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 2527,
-          "max_quantity": 4464,
-          "efficiency": 0.69
-        },
-        {
-          "min_quantity": 4465,
-          "max_quantity": 99999,
-          "efficiency": 0.73
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2559,
-          "efficiency": 0.75
-        },
-        {
-          "min_quantity": 2560,
-          "max_quantity": 4645,
-          "efficiency": 0.76
-        },
-        {
-          "min_quantity": 4646,
-          "max_quantity": 99999,
-          "efficiency": 0.8
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1699,
-          "efficiency": 0.59
-        },
-        {
-          "min_quantity": 1700,
-          "max_quantity": 99999,
-          "efficiency": 0.64
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 37468
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 39878
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 38863
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 35243
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 45755
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 35191
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 43978
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 44784
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 36413
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 43980
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 36832
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 43034
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 43896
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 39696
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 44093
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 37908
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_VI_03",
-    "region": "VIETNAM",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2160,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 2161,
-          "max_quantity": 5082,
-          "efficiency": 0.65
-        },
-        {
-          "min_quantity": 5083,
-          "max_quantity": 99999,
-          "efficiency": 0.67
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1896,
-          "efficiency": 0.77
-        },
-        {
-          "min_quantity": 1897,
-          "max_quantity": 3811,
-          "efficiency": 0.81
-        },
-        {
-          "min_quantity": 3812,
-          "max_quantity": 99999,
-          "efficiency": 0.87
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2946,
-          "efficiency": 0.67
-        },
-        {
-          "min_quantity": 2947,
-          "max_quantity": 4837,
-          "efficiency": 0.69
-        },
-        {
-          "min_quantity": 4838,
-          "max_quantity": 99999,
-          "efficiency": 0.74
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 38287,
-          "裁剪": 32467
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 37969,
-          "裁剪": 30516
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 38812,
-          "裁剪": 25541
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 36893,
-          "裁剪": 29697
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 45653,
-          "裁剪": 33727
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 37179,
-          "裁剪": 26048
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 45293,
-          "裁剪": 29436
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 39512,
-          "裁剪": 28948
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 37284,
-          "裁剪": 33405
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 40798,
-          "裁剪": 33830
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 44689,
-          "裁剪": 34088
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 37087,
-          "裁剪": 31088
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 45990,
-          "裁剪": 27958
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 43289,
-          "裁剪": 27191
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 34531,
-          "裁剪": 32244
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 38628,
-          "裁剪": 28192
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CA_03",
-    "region": "CAMBODIA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2755,
-          "efficiency": 0.66
-        },
-        {
-          "min_quantity": 2756,
-          "max_quantity": 99999,
-          "efficiency": 0.68
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1533,
-          "efficiency": 0.62
-        },
-        {
-          "min_quantity": 1534,
-          "max_quantity": 99999,
-          "efficiency": 0.64
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1763,
-          "efficiency": 0.69
-        },
-        {
-          "min_quantity": 1764,
-          "max_quantity": 3433,
-          "efficiency": 0.74
-        },
-        {
-          "min_quantity": 3434,
-          "max_quantity": 99999,
-          "efficiency": 0.79
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 38697
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 41375
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 34635
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 37311
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 38322
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 39501
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 42643
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 35644
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 41274
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 39614
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 35040
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 38326
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 37998
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 41616
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 38678
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 34037
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CH_04",
-    "region": "CHINA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2302,
-          "efficiency": 0.69
-        },
-        {
-          "min_quantity": 2303,
-          "max_quantity": 99999,
-          "efficiency": 0.73
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2494,
-          "efficiency": 0.75
-        },
-        {
-          "min_quantity": 2495,
-          "max_quantity": 99999,
-          "efficiency": 0.81
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1844,
-          "efficiency": 0.65
-        },
-        {
-          "min_quantity": 1845,
-          "max_quantity": 4463,
-          "efficiency": 0.65
-        },
-        {
-          "min_quantity": 4464,
-          "max_quantity": 99999,
-          "efficiency": 0.67
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 39373,
-          "裁剪": 26392
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 44515,
-          "裁剪": 33898
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 41441,
-          "裁剪": 31973
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 45935,
-          "裁剪": 29644
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 36027,
-          "裁剪": 26880
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 35014,
-          "裁剪": 32766
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 45639,
-          "裁剪": 30635
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 44309,
-          "裁剪": 32402
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 37925,
-          "裁剪": 32176
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 43689,
-          "裁剪": 31848
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 38051,
-          "裁剪": 26491
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 42659,
-          "裁剪": 25926
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 41513,
-          "裁剪": 29272
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 44975,
-          "裁剪": 28476
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 42541,
-          "裁剪": 34387
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 35828,
-          "裁剪": 31289
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CA_04",
-    "region": "CAMBODIA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2893,
-          "efficiency": 0.64
-        },
-        {
-          "min_quantity": 2894,
-          "max_quantity": 99999,
-          "efficiency": 0.67
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2234,
-          "efficiency": 0.6
-        },
-        {
-          "min_quantity": 2235,
-          "max_quantity": 4116,
-          "efficiency": 0.63
-        },
-        {
-          "min_quantity": 4117,
-          "max_quantity": 99999,
-          "efficiency": 0.65
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2723,
-          "efficiency": 0.72
-        },
-        {
-          "min_quantity": 2724,
-          "max_quantity": 99999,
-          "efficiency": 0.76
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 44806
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 37659
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 39848
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 43112
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 41535
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 37812
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 36321
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 34581
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 44521
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 35815
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 44758
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 38792
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 42853
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 44496
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 42766
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 39718
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CH_05",
-    "region": "CHINA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2624,
-          "efficiency": 0.75
-        },
-        {
-          "min_quantity": 2625,
-          "max_quantity": 5355,
-          "efficiency": 0.76
-        },
-        {
-          "min_quantity": 5356,
-          "max_quantity": 99999,
-          "efficiency": 0.8
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2026,
-          "efficiency": 0.71
-        },
-        {
-          "min_quantity": 2027,
-          "max_quantity": 4248,
-          "efficiency": 0.74
-        },
-        {
-          "min_quantity": 4249,
-          "max_quantity": 99999,
-          "efficiency": 0.76
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1644,
-          "efficiency": 0.77
-        },
-        {
-          "min_quantity": 1645,
-          "max_quantity": 99999,
-          "efficiency": 0.8
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 37770,
-          "裁剪": 25930
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 41476,
-          "裁剪": 30399
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 40760,
-          "裁剪": 31272
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 45749,
-          "裁剪": 29451
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 35819,
-          "裁剪": 26440
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 39308,
-          "裁剪": 28440
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 39899,
-          "裁剪": 28198
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 44632,
-          "裁剪": 30217
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 38644,
-          "裁剪": 32625
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 38349,
-          "裁剪": 30033
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 40220,
-          "裁剪": 27342
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 37416,
-          "裁剪": 26537
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 43418,
-          "裁剪": 34164
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 37274,
-          "裁剪": 26564
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 42864,
-          "裁剪": 26378
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 45733,
-          "裁剪": 30611
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_CA_05",
-    "region": "CAMBODIA",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2921,
-          "efficiency": 0.84
-        },
-        {
-          "min_quantity": 2922,
-          "max_quantity": 99999,
-          "efficiency": 0.91
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1663,
-          "efficiency": 0.6
-        },
-        {
-          "min_quantity": 1664,
+          "min_quantity": 2725,
           "max_quantity": 99999,
           "efficiency": 0.61
         }
@@ -2821,196 +217,19 @@
       "衬衫": [
         {
           "min_quantity": 0,
-          "max_quantity": 2347,
-          "efficiency": 0.72
-        },
-        {
-          "min_quantity": 2348,
-          "max_quantity": 4312,
-          "efficiency": 0.74
-        },
-        {
-          "min_quantity": 4313,
-          "max_quantity": 99999,
-          "efficiency": 0.75
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 40034,
-          "裁剪": 30246
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 37690,
-          "裁剪": 31137
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 38373,
-          "裁剪": 30400
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 36002,
-          "裁剪": 30866
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 36499,
-          "裁剪": 29572
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 45256,
-          "裁剪": 26474
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 35927,
-          "裁剪": 31043
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 41552,
-          "裁剪": 29599
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 38698,
-          "裁剪": 30443
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 39425,
-          "裁剪": 27138
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 34187,
-          "裁剪": 29755
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 45209,
-          "裁剪": 29507
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 35700,
-          "裁剪": 29243
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 35260,
-          "裁剪": 28220
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 43330,
-          "裁剪": 30303
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 34448,
-          "裁剪": 30075
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_VI_04",
-    "region": "VIETNAM",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2382,
+          "max_quantity": 1610,
           "efficiency": 0.6
         },
         {
-          "min_quantity": 2383,
+          "min_quantity": 1611,
+          "max_quantity": 3871,
+          "efficiency": 0.6
+        },
+        {
+          "min_quantity": 3872,
           "max_quantity": 99999,
           "efficiency": 0.62
         }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2829,
-          "efficiency": 0.76
-        },
-        {
-          "min_quantity": 2830,
-          "max_quantity": 99999,
-          "efficiency": 0.81
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2846,
-          "efficiency": 0.58
-        },
-        {
-          "min_quantity": 2847,
-          "max_quantity": 4934,
-          "efficiency": 0.62
-        },
-        {
-          "min_quantity": 4935,
-          "max_quantity": 99999,
-          "efficiency": 0.63
-        }
       ]
     },
     "capacity_periods": [
@@ -3018,445 +237,91 @@
         "start_date": "2025-08-01",
         "end_date": "2025-08-14",
         "capacity_by_process": {
-          "缝纫": 42100,
-          "裁剪": 32229
+          "缝纫": 43427
         }
       },
       {
         "start_date": "2025-08-15",
         "end_date": "2025-08-28",
         "capacity_by_process": {
-          "缝纫": 43858,
-          "裁剪": 33752
+          "缝纫": 35721
         }
       },
       {
         "start_date": "2025-08-29",
         "end_date": "2025-09-11",
         "capacity_by_process": {
-          "缝纫": 43048,
-          "裁剪": 27829
+          "缝纫": 40706
         }
       },
       {
         "start_date": "2025-09-12",
         "end_date": "2025-09-25",
         "capacity_by_process": {
-          "缝纫": 45247,
-          "裁剪": 32895
+          "缝纫": 44998
         }
       },
       {
         "start_date": "2025-09-26",
         "end_date": "2025-10-09",
         "capacity_by_process": {
-          "缝纫": 44721,
-          "裁剪": 31603
+          "缝纫": 39435
         }
       },
       {
         "start_date": "2025-10-10",
         "end_date": "2025-10-23",
         "capacity_by_process": {
-          "缝纫": 38731,
-          "裁剪": 28202
+          "缝纫": 42646
         }
       },
       {
         "start_date": "2025-10-24",
         "end_date": "2025-11-06",
         "capacity_by_process": {
-          "缝纫": 36902,
-          "裁剪": 30838
+          "缝纫": 38068
         }
       },
       {
         "start_date": "2025-11-07",
         "end_date": "2025-11-20",
         "capacity_by_process": {
-          "缝纫": 35112,
-          "裁剪": 29646
+          "缝纫": 34133
         }
       },
       {
         "start_date": "2025-11-21",
         "end_date": "2025-12-04",
         "capacity_by_process": {
-          "缝纫": 41518,
-          "裁剪": 31044
+          "缝纫": 44900
         }
       },
       {
         "start_date": "2025-12-05",
         "end_date": "2025-12-18",
         "capacity_by_process": {
-          "缝纫": 45310,
-          "裁剪": 33845
+          "缝纫": 38249
         }
       },
       {
         "start_date": "2025-12-19",
         "end_date": "2026-01-01",
         "capacity_by_process": {
-          "缝纫": 40855,
-          "裁剪": 33623
+          "缝纫": 36967
         }
       },
       {
         "start_date": "2026-01-02",
         "end_date": "2026-01-15",
         "capacity_by_process": {
-          "缝纫": 45214,
-          "裁剪": 32170
+          "缝纫": 38349
         }
       },
       {
         "start_date": "2026-01-16",
         "end_date": "2026-01-29",
         "capacity_by_process": {
-          "缝纫": 42049,
-          "裁剪": 30557
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 41505,
-          "裁剪": 33359
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 38822,
-          "裁剪": 31320
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 39781,
-          "裁剪": 27706
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_TH_05",
-    "region": "THAILAND",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1742,
-          "efficiency": 0.74
-        },
-        {
-          "min_quantity": 1743,
-          "max_quantity": 99999,
-          "efficiency": 0.75
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2574,
-          "efficiency": 0.76
-        },
-        {
-          "min_quantity": 2575,
-          "max_quantity": 99999,
-          "efficiency": 0.78
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2142,
-          "efficiency": 0.69
-        },
-        {
-          "min_quantity": 2143,
-          "max_quantity": 99999,
-          "efficiency": 0.73
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 41965,
-          "裁剪": 28940
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 37070,
-          "裁剪": 30581
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 43615,
-          "裁剪": 29067
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 43662,
-          "裁剪": 32850
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 39062,
-          "裁剪": 28201
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 41029,
-          "裁剪": 34001
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 36614,
-          "裁剪": 32669
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 35591,
-          "裁剪": 31182
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 38419,
-          "裁剪": 27889
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 42880,
-          "裁剪": 31631
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 37122,
-          "裁剪": 28292
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 40558,
-          "裁剪": 34049
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 40372,
-          "裁剪": 32045
-        }
-      },
-      {
-        "start_date": "2026-01-30",
-        "end_date": "2026-02-12",
-        "capacity_by_process": {
-          "缝纫": 43123,
-          "裁剪": 33232
-        }
-      },
-      {
-        "start_date": "2026-02-13",
-        "end_date": "2026-02-26",
-        "capacity_by_process": {
-          "缝纫": 40826,
-          "裁剪": 25779
-        }
-      },
-      {
-        "start_date": "2026-02-27",
-        "end_date": "2026-03-12",
-        "capacity_by_process": {
-          "缝纫": 42677,
-          "裁剪": 34271
-        }
-      }
-    ]
-  },
-  {
-    "factory_id": "F_TH_06",
-    "region": "THAILAND",
-    "production_efficiencies": {
-      "外套": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2726,
-          "efficiency": 0.61
-        },
-        {
-          "min_quantity": 2727,
-          "max_quantity": 99999,
-          "efficiency": 0.63
-        }
-      ],
-      "裤子": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 1729,
-          "efficiency": 0.69
-        },
-        {
-          "min_quantity": 1730,
-          "max_quantity": 4288,
-          "efficiency": 0.73
-        },
-        {
-          "min_quantity": 4289,
-          "max_quantity": 99999,
-          "efficiency": 0.75
-        }
-      ],
-      "衬衫": [
-        {
-          "min_quantity": 0,
-          "max_quantity": 2785,
-          "efficiency": 0.75
-        },
-        {
-          "min_quantity": 2786,
-          "max_quantity": 5082,
-          "efficiency": 0.77
-        },
-        {
-          "min_quantity": 5083,
-          "max_quantity": 99999,
-          "efficiency": 0.82
-        }
-      ]
-    },
-    "capacity_periods": [
-      {
-        "start_date": "2025-08-01",
-        "end_date": "2025-08-14",
-        "capacity_by_process": {
-          "缝纫": 40522
-        }
-      },
-      {
-        "start_date": "2025-08-15",
-        "end_date": "2025-08-28",
-        "capacity_by_process": {
-          "缝纫": 43920
-        }
-      },
-      {
-        "start_date": "2025-08-29",
-        "end_date": "2025-09-11",
-        "capacity_by_process": {
-          "缝纫": 43257
-        }
-      },
-      {
-        "start_date": "2025-09-12",
-        "end_date": "2025-09-25",
-        "capacity_by_process": {
-          "缝纫": 35975
-        }
-      },
-      {
-        "start_date": "2025-09-26",
-        "end_date": "2025-10-09",
-        "capacity_by_process": {
-          "缝纫": 35060
-        }
-      },
-      {
-        "start_date": "2025-10-10",
-        "end_date": "2025-10-23",
-        "capacity_by_process": {
-          "缝纫": 42307
-        }
-      },
-      {
-        "start_date": "2025-10-24",
-        "end_date": "2025-11-06",
-        "capacity_by_process": {
-          "缝纫": 34043
-        }
-      },
-      {
-        "start_date": "2025-11-07",
-        "end_date": "2025-11-20",
-        "capacity_by_process": {
-          "缝纫": 36397
-        }
-      },
-      {
-        "start_date": "2025-11-21",
-        "end_date": "2025-12-04",
-        "capacity_by_process": {
-          "缝纫": 36096
-        }
-      },
-      {
-        "start_date": "2025-12-05",
-        "end_date": "2025-12-18",
-        "capacity_by_process": {
-          "缝纫": 39136
-        }
-      },
-      {
-        "start_date": "2025-12-19",
-        "end_date": "2026-01-01",
-        "capacity_by_process": {
-          "缝纫": 37249
-        }
-      },
-      {
-        "start_date": "2026-01-02",
-        "end_date": "2026-01-15",
-        "capacity_by_process": {
-          "缝纫": 42116
-        }
-      },
-      {
-        "start_date": "2026-01-16",
-        "end_date": "2026-01-29",
-        "capacity_by_process": {
-          "缝纫": 36768
+          "缝纫": 40655
         }
       },
       {
@@ -3470,14 +335,3108 @@
         "start_date": "2026-02-13",
         "end_date": "2026-02-26",
         "capacity_by_process": {
-          "缝纫": 39258
+          "缝纫": 35184
         }
       },
       {
         "start_date": "2026-02-27",
         "end_date": "2026-03-12",
         "capacity_by_process": {
-          "缝纫": 35256
+          "缝纫": 41662
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_TH_01",
+    "region": "THAILAND",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1754,
+          "efficiency": 0.7
+        },
+        {
+          "min_quantity": 1755,
+          "max_quantity": 99999,
+          "efficiency": 0.74
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2271,
+          "efficiency": 0.76
+        },
+        {
+          "min_quantity": 2272,
+          "max_quantity": 5223,
+          "efficiency": 0.77
+        },
+        {
+          "min_quantity": 5224,
+          "max_quantity": 99999,
+          "efficiency": 0.81
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2977,
+          "efficiency": 0.67
+        },
+        {
+          "min_quantity": 2978,
+          "max_quantity": 99999,
+          "efficiency": 0.71
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 35431,
+          "裁剪": 27211
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 35278,
+          "裁剪": 26811
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 44912,
+          "裁剪": 33901
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 45979,
+          "裁剪": 29227
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 44279,
+          "裁剪": 31626
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 39254,
+          "裁剪": 33837
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 40948,
+          "裁剪": 31153
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 44379,
+          "裁剪": 31007
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 35079,
+          "裁剪": 34148
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 36342,
+          "裁剪": 26927
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 34559,
+          "裁剪": 28393
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 45421,
+          "裁剪": 33804
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 43075,
+          "裁剪": 31084
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 43101,
+          "裁剪": 33293
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 34159,
+          "裁剪": 29962
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 44902,
+          "裁剪": 32186
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CH_01",
+    "region": "CHINA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2830,
+          "efficiency": 0.66
+        },
+        {
+          "min_quantity": 2831,
+          "max_quantity": 99999,
+          "efficiency": 0.71
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2224,
+          "efficiency": 0.62
+        },
+        {
+          "min_quantity": 2225,
+          "max_quantity": 99999,
+          "efficiency": 0.64
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2747,
+          "efficiency": 0.78
+        },
+        {
+          "min_quantity": 2748,
+          "max_quantity": 99999,
+          "efficiency": 0.81
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 35931
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 36020
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 37661
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 42437
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 42405
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 34415
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 40990
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 43989
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 39925
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 43361
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 41999
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 44609
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 34196
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 40372
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 39865
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 44062
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CA_03",
+    "region": "CAMBODIA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2124,
+          "efficiency": 0.77
+        },
+        {
+          "min_quantity": 2125,
+          "max_quantity": 99999,
+          "efficiency": 0.8
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2922,
+          "efficiency": 0.55
+        },
+        {
+          "min_quantity": 2923,
+          "max_quantity": 99999,
+          "efficiency": 0.58
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2813,
+          "efficiency": 0.66
+        },
+        {
+          "min_quantity": 2814,
+          "max_quantity": 99999,
+          "efficiency": 0.7
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 38713
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 37415
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 41251
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 42702
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 37697
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 41349
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 37153
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 45461
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 38985
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 43068
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 42649
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 37821
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 39176
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 43394
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 37394
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 38805
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CA_04",
+    "region": "CAMBODIA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2906,
+          "efficiency": 0.67
+        },
+        {
+          "min_quantity": 2907,
+          "max_quantity": 99999,
+          "efficiency": 0.69
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1593,
+          "efficiency": 0.74
+        },
+        {
+          "min_quantity": 1594,
+          "max_quantity": 99999,
+          "efficiency": 0.78
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1623,
+          "efficiency": 0.66
+        },
+        {
+          "min_quantity": 1624,
+          "max_quantity": 3751,
+          "efficiency": 0.69
+        },
+        {
+          "min_quantity": 3752,
+          "max_quantity": 99999,
+          "efficiency": 0.71
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 39720,
+          "裁剪": 34335
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 34513,
+          "裁剪": 30251
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 36651,
+          "裁剪": 33226
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 45805,
+          "裁剪": 30529
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 40480,
+          "裁剪": 28193
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 41591,
+          "裁剪": 33916
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 40662,
+          "裁剪": 28976
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 37831,
+          "裁剪": 27665
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 36291,
+          "裁剪": 27552
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 34859,
+          "裁剪": 28713
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 40186,
+          "裁剪": 31740
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 34538,
+          "裁剪": 29305
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 39237,
+          "裁剪": 31416
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 41274,
+          "裁剪": 30737
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 38323,
+          "裁剪": 31462
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 40304,
+          "裁剪": 30933
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_VI_01",
+    "region": "VIETNAM",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1653,
+          "efficiency": 0.68
+        },
+        {
+          "min_quantity": 1654,
+          "max_quantity": 99999,
+          "efficiency": 0.72
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2333,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 2334,
+          "max_quantity": 4956,
+          "efficiency": 0.68
+        },
+        {
+          "min_quantity": 4957,
+          "max_quantity": 99999,
+          "efficiency": 0.69
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2470,
+          "efficiency": 0.61
+        },
+        {
+          "min_quantity": 2471,
+          "max_quantity": 99999,
+          "efficiency": 0.63
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 34857,
+          "裁剪": 28876
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 35436,
+          "裁剪": 27760
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 42048,
+          "裁剪": 34370
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 37399,
+          "裁剪": 29269
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 37045,
+          "裁剪": 27084
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 39175,
+          "裁剪": 34101
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 44678,
+          "裁剪": 28122
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 43418,
+          "裁剪": 28489
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 42870,
+          "裁剪": 33603
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 44115,
+          "裁剪": 29120
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 37984,
+          "裁剪": 27095
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 42367,
+          "裁剪": 28235
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 45882,
+          "裁剪": 30828
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 37914,
+          "裁剪": 26120
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 41588,
+          "裁剪": 32942
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 34742,
+          "裁剪": 25848
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_VI_02",
+    "region": "VIETNAM",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2775,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 2776,
+          "max_quantity": 99999,
+          "efficiency": 0.65
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2182,
+          "efficiency": 0.74
+        },
+        {
+          "min_quantity": 2183,
+          "max_quantity": 3697,
+          "efficiency": 0.75
+        },
+        {
+          "min_quantity": 3698,
+          "max_quantity": 99999,
+          "efficiency": 0.8
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2006,
+          "efficiency": 0.77
+        },
+        {
+          "min_quantity": 2007,
+          "max_quantity": 99999,
+          "efficiency": 0.8
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 42281
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 40781
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 34857
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 44640
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 42208
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 42871
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 38754
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 45828
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 38287
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 39018
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 34442
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 45467
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 44306
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 36998
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 34340
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 40395
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_TH_02",
+    "region": "THAILAND",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2678,
+          "efficiency": 0.57
+        },
+        {
+          "min_quantity": 2679,
+          "max_quantity": 99999,
+          "efficiency": 0.58
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2892,
+          "efficiency": 0.72
+        },
+        {
+          "min_quantity": 2893,
+          "max_quantity": 99999,
+          "efficiency": 0.77
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2274,
+          "efficiency": 0.57
+        },
+        {
+          "min_quantity": 2275,
+          "max_quantity": 99999,
+          "efficiency": 0.59
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 42126,
+          "裁剪": 28623
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 39983,
+          "裁剪": 32548
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 44050,
+          "裁剪": 33080
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 35930,
+          "裁剪": 33795
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 44462,
+          "裁剪": 30929
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 35556,
+          "裁剪": 30040
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 43082,
+          "裁剪": 26163
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 40627,
+          "裁剪": 29293
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 36777,
+          "裁剪": 25892
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 43654,
+          "裁剪": 33975
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 40193,
+          "裁剪": 26489
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 41471,
+          "裁剪": 34302
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 44899,
+          "裁剪": 33959
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 44119,
+          "裁剪": 33906
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 44037,
+          "裁剪": 33961
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 42789,
+          "裁剪": 34221
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_TH_03",
+    "region": "THAILAND",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2156,
+          "efficiency": 0.83
+        },
+        {
+          "min_quantity": 2157,
+          "max_quantity": 3875,
+          "efficiency": 0.86
+        },
+        {
+          "min_quantity": 3876,
+          "max_quantity": 99999,
+          "efficiency": 0.88
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2950,
+          "efficiency": 0.67
+        },
+        {
+          "min_quantity": 2951,
+          "max_quantity": 5950,
+          "efficiency": 0.7
+        },
+        {
+          "min_quantity": 5951,
+          "max_quantity": 99999,
+          "efficiency": 0.75
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2019,
+          "efficiency": 0.67
+        },
+        {
+          "min_quantity": 2020,
+          "max_quantity": 99999,
+          "efficiency": 0.7
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 45972,
+          "裁剪": 27638
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 36702,
+          "裁剪": 29002
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 36454,
+          "裁剪": 26701
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 37921,
+          "裁剪": 29099
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 35504,
+          "裁剪": 29730
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 41884,
+          "裁剪": 33758
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 40583,
+          "裁剪": 31909
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 42946,
+          "裁剪": 27732
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 42864,
+          "裁剪": 27695
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 39029,
+          "裁剪": 29993
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 38629,
+          "裁剪": 27675
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 40387,
+          "裁剪": 28655
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 39693,
+          "裁剪": 30730
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 38011,
+          "裁剪": 32819
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 38839,
+          "裁剪": 33553
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 34150,
+          "裁剪": 28909
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_VI_03",
+    "region": "VIETNAM",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1838,
+          "efficiency": 0.74
+        },
+        {
+          "min_quantity": 1839,
+          "max_quantity": 3394,
+          "efficiency": 0.79
+        },
+        {
+          "min_quantity": 3395,
+          "max_quantity": 99999,
+          "efficiency": 0.83
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1745,
+          "efficiency": 0.7
+        },
+        {
+          "min_quantity": 1746,
+          "max_quantity": 4524,
+          "efficiency": 0.73
+        },
+        {
+          "min_quantity": 4525,
+          "max_quantity": 99999,
+          "efficiency": 0.76
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2572,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 2573,
+          "max_quantity": 5070,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 5071,
+          "max_quantity": 99999,
+          "efficiency": 0.65
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 42266,
+          "裁剪": 29231
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 44933,
+          "裁剪": 25820
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 36935,
+          "裁剪": 31741
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 38889,
+          "裁剪": 27285
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 44061,
+          "裁剪": 28986
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 45212,
+          "裁剪": 33422
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 37404,
+          "裁剪": 27274
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 38298,
+          "裁剪": 33693
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 41982,
+          "裁剪": 27149
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 44353,
+          "裁剪": 28573
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 39349,
+          "裁剪": 30421
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 36023,
+          "裁剪": 33886
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 39890,
+          "裁剪": 30089
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 34635,
+          "裁剪": 32210
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 42938,
+          "裁剪": 33240
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 39312,
+          "裁剪": 33449
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CA_05",
+    "region": "CAMBODIA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2172,
+          "efficiency": 0.7
+        },
+        {
+          "min_quantity": 2173,
+          "max_quantity": 4570,
+          "efficiency": 0.72
+        },
+        {
+          "min_quantity": 4571,
+          "max_quantity": 99999,
+          "efficiency": 0.77
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1499,
+          "efficiency": 0.64
+        },
+        {
+          "min_quantity": 1500,
+          "max_quantity": 99999,
+          "efficiency": 0.69
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2393,
+          "efficiency": 0.69
+        },
+        {
+          "min_quantity": 2394,
+          "max_quantity": 99999,
+          "efficiency": 0.72
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 36130,
+          "裁剪": 26394
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 44148,
+          "裁剪": 26587
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 36338,
+          "裁剪": 32782
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 44794,
+          "裁剪": 28888
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 35724,
+          "裁剪": 31056
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 38049,
+          "裁剪": 30516
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 36273,
+          "裁剪": 30656
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 42098,
+          "裁剪": 27540
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 36389,
+          "裁剪": 31366
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 39621,
+          "裁剪": 26497
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 34384,
+          "裁剪": 27262
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 41371,
+          "裁剪": 28471
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 37132,
+          "裁剪": 27649
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 41952,
+          "裁剪": 29778
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 42295,
+          "裁剪": 29925
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 41520,
+          "裁剪": 26970
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CA_06",
+    "region": "CAMBODIA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1887,
+          "efficiency": 0.59
+        },
+        {
+          "min_quantity": 1888,
+          "max_quantity": 4280,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 4281,
+          "max_quantity": 99999,
+          "efficiency": 0.65
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2743,
+          "efficiency": 0.66
+        },
+        {
+          "min_quantity": 2744,
+          "max_quantity": 4843,
+          "efficiency": 0.68
+        },
+        {
+          "min_quantity": 4844,
+          "max_quantity": 99999,
+          "efficiency": 0.69
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1663,
+          "efficiency": 0.76
+        },
+        {
+          "min_quantity": 1664,
+          "max_quantity": 99999,
+          "efficiency": 0.79
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 42625,
+          "裁剪": 25671
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 44285,
+          "裁剪": 28352
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 44579,
+          "裁剪": 29462
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 37434,
+          "裁剪": 31372
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 39408,
+          "裁剪": 30615
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 45553,
+          "裁剪": 33331
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 41396,
+          "裁剪": 32678
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 38923,
+          "裁剪": 32148
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 38428,
+          "裁剪": 30856
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 34265,
+          "裁剪": 33795
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 39065,
+          "裁剪": 30112
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 41072,
+          "裁剪": 25733
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 37185,
+          "裁剪": 32826
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 37900,
+          "裁剪": 26177
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 40623,
+          "裁剪": 32138
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 38337,
+          "裁剪": 30965
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_TH_04",
+    "region": "THAILAND",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2933,
+          "efficiency": 0.79
+        },
+        {
+          "min_quantity": 2934,
+          "max_quantity": 5047,
+          "efficiency": 0.81
+        },
+        {
+          "min_quantity": 5048,
+          "max_quantity": 99999,
+          "efficiency": 0.87
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2854,
+          "efficiency": 0.72
+        },
+        {
+          "min_quantity": 2855,
+          "max_quantity": 5775,
+          "efficiency": 0.77
+        },
+        {
+          "min_quantity": 5776,
+          "max_quantity": 99999,
+          "efficiency": 0.82
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2104,
+          "efficiency": 0.69
+        },
+        {
+          "min_quantity": 2105,
+          "max_quantity": 4214,
+          "efficiency": 0.74
+        },
+        {
+          "min_quantity": 4215,
+          "max_quantity": 99999,
+          "efficiency": 0.79
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 35063,
+          "裁剪": 27502
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 36989,
+          "裁剪": 27750
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 44813,
+          "裁剪": 26679
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 39197,
+          "裁剪": 33160
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 36714,
+          "裁剪": 34203
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 40403,
+          "裁剪": 28408
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 35169,
+          "裁剪": 31839
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 37875,
+          "裁剪": 26300
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 43586,
+          "裁剪": 28221
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 38555,
+          "裁剪": 25936
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 38751,
+          "裁剪": 28723
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 41250,
+          "裁剪": 31098
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 38945,
+          "裁剪": 25577
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 39666,
+          "裁剪": 30209
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 35781,
+          "裁剪": 32498
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 41831,
+          "裁剪": 32855
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_VI_04",
+    "region": "VIETNAM",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2901,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 2902,
+          "max_quantity": 99999,
+          "efficiency": 0.67
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2426,
+          "efficiency": 0.59
+        },
+        {
+          "min_quantity": 2427,
+          "max_quantity": 99999,
+          "efficiency": 0.6
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2910,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 2911,
+          "max_quantity": 99999,
+          "efficiency": 0.67
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 40474
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 42162
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 41485
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 40918
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 43695
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 38486
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 35149
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 42844
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 45141
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 42892
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 42658
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 39989
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 35277
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 36543
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 39406
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 43303
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CA_07",
+    "region": "CAMBODIA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2405,
+          "efficiency": 0.65
+        },
+        {
+          "min_quantity": 2406,
+          "max_quantity": 99999,
+          "efficiency": 0.66
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1613,
+          "efficiency": 0.61
+        },
+        {
+          "min_quantity": 1614,
+          "max_quantity": 99999,
+          "efficiency": 0.62
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1513,
+          "efficiency": 0.75
+        },
+        {
+          "min_quantity": 1514,
+          "max_quantity": 4057,
+          "efficiency": 0.81
+        },
+        {
+          "min_quantity": 4058,
+          "max_quantity": 99999,
+          "efficiency": 0.87
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 43161
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 34413
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 38502
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 44809
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 45905
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 44633
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 43042
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 39710
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 45341
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 41981
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 43198
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 45062
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 40336
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 39881
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 41569
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 35067
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_TH_05",
+    "region": "THAILAND",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2406,
+          "efficiency": 0.72
+        },
+        {
+          "min_quantity": 2407,
+          "max_quantity": 4230,
+          "efficiency": 0.77
+        },
+        {
+          "min_quantity": 4231,
+          "max_quantity": 99999,
+          "efficiency": 0.82
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2863,
+          "efficiency": 0.78
+        },
+        {
+          "min_quantity": 2864,
+          "max_quantity": 99999,
+          "efficiency": 0.81
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2970,
+          "efficiency": 0.79
+        },
+        {
+          "min_quantity": 2971,
+          "max_quantity": 4554,
+          "efficiency": 0.84
+        },
+        {
+          "min_quantity": 4555,
+          "max_quantity": 99999,
+          "efficiency": 0.9
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 39806,
+          "裁剪": 30454
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 40541,
+          "裁剪": 32588
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 35351,
+          "裁剪": 30762
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 45367,
+          "裁剪": 34116
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 42398,
+          "裁剪": 30239
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 36890,
+          "裁剪": 27867
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 42559,
+          "裁剪": 27035
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 45112,
+          "裁剪": 34367
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 43394,
+          "裁剪": 26245
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 41099,
+          "裁剪": 31199
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 40732,
+          "裁剪": 32202
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 43970,
+          "裁剪": 31552
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 42610,
+          "裁剪": 29155
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 45907,
+          "裁剪": 26481
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 40465,
+          "裁剪": 28918
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 34102,
+          "裁剪": 30356
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_TH_06",
+    "region": "THAILAND",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2679,
+          "efficiency": 0.68
+        },
+        {
+          "min_quantity": 2680,
+          "max_quantity": 99999,
+          "efficiency": 0.72
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2912,
+          "efficiency": 0.6
+        },
+        {
+          "min_quantity": 2913,
+          "max_quantity": 5803,
+          "efficiency": 0.65
+        },
+        {
+          "min_quantity": 5804,
+          "max_quantity": 99999,
+          "efficiency": 0.67
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2744,
+          "efficiency": 0.71
+        },
+        {
+          "min_quantity": 2745,
+          "max_quantity": 99999,
+          "efficiency": 0.76
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 43228
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 34526
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 35934
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 40784
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 45079
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 41095
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 45098
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 40121
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 35537
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 38656
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 35465
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 45169
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 45991
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 38149
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 39489
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 39502
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CA_08",
+    "region": "CAMBODIA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1811,
+          "efficiency": 0.72
+        },
+        {
+          "min_quantity": 1812,
+          "max_quantity": 3876,
+          "efficiency": 0.76
+        },
+        {
+          "min_quantity": 3877,
+          "max_quantity": 99999,
+          "efficiency": 0.8
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2307,
+          "efficiency": 0.75
+        },
+        {
+          "min_quantity": 2308,
+          "max_quantity": 99999,
+          "efficiency": 0.76
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1636,
+          "efficiency": 0.59
+        },
+        {
+          "min_quantity": 1637,
+          "max_quantity": 3969,
+          "efficiency": 0.63
+        },
+        {
+          "min_quantity": 3970,
+          "max_quantity": 99999,
+          "efficiency": 0.67
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 37870
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 35850
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 34778
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 38617
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 38127
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 34438
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 43719
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 42008
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 36097
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 41749
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 34606
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 40093
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 39882
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 37299
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 39403
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 37115
+        }
+      }
+    ]
+  },
+  {
+    "factory_id": "F_CH_02",
+    "region": "CHINA",
+    "production_efficiencies": {
+      "外套": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2613,
+          "efficiency": 0.7
+        },
+        {
+          "min_quantity": 2614,
+          "max_quantity": 99999,
+          "efficiency": 0.75
+        }
+      ],
+      "裤子": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 1503,
+          "efficiency": 0.66
+        },
+        {
+          "min_quantity": 1504,
+          "max_quantity": 99999,
+          "efficiency": 0.68
+        }
+      ],
+      "衬衫": [
+        {
+          "min_quantity": 0,
+          "max_quantity": 2683,
+          "efficiency": 0.68
+        },
+        {
+          "min_quantity": 2684,
+          "max_quantity": 4412,
+          "efficiency": 0.7
+        },
+        {
+          "min_quantity": 4413,
+          "max_quantity": 99999,
+          "efficiency": 0.74
+        }
+      ]
+    },
+    "capacity_periods": [
+      {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14",
+        "capacity_by_process": {
+          "缝纫": 36755,
+          "裁剪": 28382
+        }
+      },
+      {
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-28",
+        "capacity_by_process": {
+          "缝纫": 45312,
+          "裁剪": 25523
+        }
+      },
+      {
+        "start_date": "2025-08-29",
+        "end_date": "2025-09-11",
+        "capacity_by_process": {
+          "缝纫": 45320,
+          "裁剪": 29589
+        }
+      },
+      {
+        "start_date": "2025-09-12",
+        "end_date": "2025-09-25",
+        "capacity_by_process": {
+          "缝纫": 45532,
+          "裁剪": 33356
+        }
+      },
+      {
+        "start_date": "2025-09-26",
+        "end_date": "2025-10-09",
+        "capacity_by_process": {
+          "缝纫": 36510,
+          "裁剪": 29990
+        }
+      },
+      {
+        "start_date": "2025-10-10",
+        "end_date": "2025-10-23",
+        "capacity_by_process": {
+          "缝纫": 40559,
+          "裁剪": 27523
+        }
+      },
+      {
+        "start_date": "2025-10-24",
+        "end_date": "2025-11-06",
+        "capacity_by_process": {
+          "缝纫": 39582,
+          "裁剪": 26583
+        }
+      },
+      {
+        "start_date": "2025-11-07",
+        "end_date": "2025-11-20",
+        "capacity_by_process": {
+          "缝纫": 41753,
+          "裁剪": 29463
+        }
+      },
+      {
+        "start_date": "2025-11-21",
+        "end_date": "2025-12-04",
+        "capacity_by_process": {
+          "缝纫": 44059,
+          "裁剪": 27238
+        }
+      },
+      {
+        "start_date": "2025-12-05",
+        "end_date": "2025-12-18",
+        "capacity_by_process": {
+          "缝纫": 38552,
+          "裁剪": 30501
+        }
+      },
+      {
+        "start_date": "2025-12-19",
+        "end_date": "2026-01-01",
+        "capacity_by_process": {
+          "缝纫": 45298,
+          "裁剪": 28337
+        }
+      },
+      {
+        "start_date": "2026-01-02",
+        "end_date": "2026-01-15",
+        "capacity_by_process": {
+          "缝纫": 43837,
+          "裁剪": 34424
+        }
+      },
+      {
+        "start_date": "2026-01-16",
+        "end_date": "2026-01-29",
+        "capacity_by_process": {
+          "缝纫": 39785,
+          "裁剪": 34047
+        }
+      },
+      {
+        "start_date": "2026-01-30",
+        "end_date": "2026-02-12",
+        "capacity_by_process": {
+          "缝纫": 43134,
+          "裁剪": 34477
+        }
+      },
+      {
+        "start_date": "2026-02-13",
+        "end_date": "2026-02-26",
+        "capacity_by_process": {
+          "缝纫": 36241,
+          "裁剪": 31536
+        }
+      },
+      {
+        "start_date": "2026-02-27",
+        "end_date": "2026-03-12",
+        "capacity_by_process": {
+          "缝纫": 45044,
+          "裁剪": 33847
         }
       }
     ]

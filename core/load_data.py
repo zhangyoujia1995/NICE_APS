@@ -45,6 +45,7 @@ class Order:
     production_lead_time: int
     total_process_capacity: Dict[str, int]
     eligible_factories: List[str]
+    order_type: int # 1 代表正式单 (Firm Order), 0 代表预测单 (Forecast Order)
     # Optional 表示这个字段是可选的，可以不存在或为None
     fixed_assignment: Optional[Dict[str, str]] = None
 

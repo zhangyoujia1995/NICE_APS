@@ -6,7 +6,7 @@ import os
 from typing import List, Dict
 from datetime import datetime, timedelta
 
-from .file_handler import save_data_to_json
+from file_handler import save_data_to_json
 
 # --- 1. 配置生成参数 ---
 # 您可以在这里调整，以生成不同特性和规模的数据
@@ -138,6 +138,7 @@ def generate_orders_data(factories: List[Dict]):
         order_id = f"TEST_{i + 1:03d}"
         product_type = random.choice(CONFIG["product_types"])
         quantity = random.randint(CONFIG["order_quantity_min"], CONFIG["order_quantity_max"])
+        order_type = random.randint(0,1)
 
         # --- b. 智能确定订单所需工序和合格工厂 ---
         required_processes = {"缝纫"}  # 所有订单都需要缝纫
@@ -170,6 +171,7 @@ def generate_orders_data(factories: List[Dict]):
             "product_type": product_type,
             "style": f"{product_type}-款{random.randint(1, 100)}",
             "quantity": quantity,
+            "order_type": order_type,
             "due_date": due_date.strftime("%Y-%m-%d"),
             "material_purchasing_lead_time": random.randint(10, 30),
             "material_transportation_to_region_lead_time": {

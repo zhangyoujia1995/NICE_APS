@@ -47,10 +47,7 @@ def set_combined_objective(
         logging.info("延误惩罚权重 > 0，激活该目标项。")
         tardiness_term = add_tardiness_penalty_objective(model, data, variables)
         if tardiness_term is not None:
-            # 延误订单数 / 总订单数 -> [0,1]的延误率，获得相关系数
-            tardiness_to_percentage_factor = 1 / total_orders
-
-            objective_tardy = w_tardy * tardiness_term * tardiness_to_percentage_factor
+            objective_tardy = w_tardy * tardiness_term
             total_objective_terms.append(objective_tardy)
 
     # b. 处理交期偏差
