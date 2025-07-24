@@ -70,11 +70,13 @@ aps\_demo\_project/
 
 ### `config/settings.json`
 该文件是系统的“控制面板”，允许用户调整：
--   **数据路径**: `data_paths`, `output_paths`。
--   **运行参数**: `run_config`，包括`base_date`（计划基准日）和`solver_time_limit_seconds`。
--   **JIT目标参数**: `jit_objective_config`，例如`allowed_deviation_days`，用于JIT偏差率的计算。
--   **激活的约束**: `active_constraints`列表，通过增删其中的字符串来启用或禁用不同的硬性约束。
--   **目标权重**: `objective_weights`，用于调整“准时交付”和“负载均衡”之间的优先级。
+-   **数据路径**: `data_paths`, `output_paths` (包括CSV和KPI的输出路径)。
+-   **运行参数**: `run_config`，包括`base_date`, `solver_time_in_seconds`, `relative_gap_limit`。
+-   **JIT目标参数**: `jit_objective_config`，用于精细化配置JIT目标。
+-   **延误惩罚参数**: `tardiness_penalty_config`，用于区分正式单和预测单的惩罚。
+-   **激活的约束**: `active_constraints`列表，用于启用或禁用不同的硬性约束。
+-   **目标权重**: `objective_weights`，用于调整`tardiness_count`, `jit_deviation`, `workload_balance`三个核心目标之间的优先级。
+
 
 ## 5. 安装与运行
 
@@ -109,8 +111,8 @@ python main.py
     2.  **物料前置时间**: 遍历所有变量，如果其代表的分配方案早于该订单的“最早可开工日期”，则添加约束强制该变量为0。
     3.  **多工序产能**: 对每个工厂、每个周期、每个工序，其总消耗（所有相关订单的`实际工作量 * x_ofp`之和）不得超过该工序的产能上限。
   - **优化目标**:
-    1.  **延误订单**: 为每个订单创建一个“是否延误”的指示变量，通过约束将其与`x_ofp`关联。
-    2.   **JIT偏差**: 为每个订单创建`earliness_days`和`tardiness_days`变量，计算提前和延误的天数总和，并内置0.3/0.7的惩罚权重。
+    1.  **延误订单**: 区分正式/预测单，计算加权的延误订单个数。
+    2.   **JIT偏差**: 计算并最小化所有订单中最大的提前天数和延误天数。
     3.  **负载均衡**: 引入全局的“最大/最小负载率”变量，通过约束将它们与每个工厂周期的负载率关联。
     4.  **最大负载率**： 计算最大负载率，通过最小化最大负载率，结合2，使得订单均匀分布到所有工厂，减少极端负荷时间发生。
     5.  **组合目标**: 将所有激活的目标项（延误订单数、JIT偏差天数、负载不均衡度）各自转换为[0,1]范围内的标准化比率，然后根据配置的权重进行加权求和，形成最终的、求解器可以处理的浮点线性表达式。

@@ -32,9 +32,10 @@ def add_jit_deviation_objective(
 
     # 从配置中读取JIT参数
     jit_config = data.settings.get("jit_objective_config", {})
-    allowed_deviation = jit_config.get("allowed_deviation_days", 30)  # 默认为30
+    allowed_earliness_deviation = jit_config.get("allowed_earliness_deviation_days", 30)  # 默认为30
+    allowed_tardiness_deviation = jit_config.get("allowed_tardiness_deviation_days", 30)  # 默认为30
     earliness_weight = jit_config.get("earliness_weight", 0.3)  # 默认为0.3
-    lateness_weight = jit_config.get("lateness_weight", 0.7)  # 默认为0.3
+    lateness_weight = jit_config.get("lateness_weight", 0.7)  # 默认为0.7
 
     earliness_vars = []
     tardiness_vars = []
@@ -82,19 +83,26 @@ def add_jit_deviation_objective(
         # 步骤4：添加核心约束，将变量与日期关联起来
         model.Add(planned_completion_days - due_date_days == tardiness_var - earliness_var)
 
-    # 步骤5：将提前和延误天数按固定比例组合
-    total_earliness = sum(earliness_vars)
-    total_tardiness = sum(tardiness_vars)
+    # --- 创建“最大偏差”变量并使用 AddMaxEquality 约束 ---
+    if not earliness_vars or not tardiness_vars:
+        return None  # 如果没有任何订单，则不创建目标
 
-    # 采用0.3/0.7的内置比例组合成最终的“JIT偏差成本”
-    # CP-SAT的线性表达式支持浮点数系数
-    combined_jit_cost = earliness_weight * total_earliness + lateness_weight * total_tardiness
+    max_earliness_days = model.NewIntVar(0, horizon, "max_earliness_days")
+    max_tardiness_days = model.NewIntVar(0, horizon, "max_tardiness_days")
 
-    # 总偏差天数 / (总订单数*允许偏差天数) -> [0,1]的偏差率，获得相关系数
-    total_orders = len(data.orders)
-    jit_days_to_percentage_factor = 1 / (allowed_deviation * total_orders)
+    # 这条约束会强制 max_earliness_days 等于所有 earliness_vars 中的最大值
+    model.AddMaxEquality(max_earliness_days, earliness_vars)
+    # 同理
+    model.AddMaxEquality(max_tardiness_days, tardiness_vars)
 
-    jit_rate_expr = combined_jit_cost * jit_days_to_percentage_factor
+    # 将最大偏差值进行归一化和加权
+    earliness_jit_days_to_percentage_factor = 1 / allowed_earliness_deviation
+    tardiness_jit_days_to_percentage_factor = 1 / allowed_tardiness_deviation
+
+    earliness_jit_rate = max_earliness_days * earliness_jit_days_to_percentage_factor
+    tardiness_jit_rate = max_tardiness_days * tardiness_jit_days_to_percentage_factor
+
+    jit_rate_expr = earliness_weight * earliness_jit_rate + lateness_weight * tardiness_jit_rate
 
     logging.info("“JIT偏差”组合目标项添加完成。")
 

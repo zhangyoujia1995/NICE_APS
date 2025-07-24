@@ -18,12 +18,13 @@
     "material_lead_time"
   ],
   "objective_weights": {
-    "tardiness": 0.5,
-    "jit_deviation": 0.3,
+    "tardiness": 0.3,
+    "jit_deviation": 0.5,
     "workload_balance": 0.2
   },
   "jit_objective_config": {
-    "allowed_deviation_days": 30,
+    "allowed_earliness_deviation_days": 30,
+    "allowed_tardiness_deviation_days": 30,
     "earliness_weight": 0.3,
     "lateness_weight": 0.7
   },
