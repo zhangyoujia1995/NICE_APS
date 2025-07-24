@@ -23,10 +23,17 @@
     "workload_balance": 0.2
   },
   "jit_objective_config": {
-    "allowed_deviation_days": 30
+    "allowed_deviation_days": 30,
+    "earliness_weight": 0.3,
+    "lateness_weight": 0.7
   },
   "tardiness_objective_config": {
     "firm_tardy_weight": 0.7,
     "forecast_tardy_weight": 0.3
+  },
+  "workload_objective_config": {
+    "imbalance_weight": 0.5,
+    "max_load_weight": 0.5,
+    "SCALING_FACTOR": 1000
   }
 }

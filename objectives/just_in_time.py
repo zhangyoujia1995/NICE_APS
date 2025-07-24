@@ -33,6 +33,8 @@ def add_jit_deviation_objective(
     # 从配置中读取JIT参数
     jit_config = data.settings.get("jit_objective_config", {})
     allowed_deviation = jit_config.get("allowed_deviation_days", 30)  # 默认为30
+    earliness_weight = jit_config.get("earliness_weight", 0.3)  # 默认为0.3
+    lateness_weight = jit_config.get("lateness_weight", 0.7)  # 默认为0.3
 
     earliness_vars = []
     tardiness_vars = []
@@ -86,7 +88,7 @@ def add_jit_deviation_objective(
 
     # 采用0.3/0.7的内置比例组合成最终的“JIT偏差成本”
     # CP-SAT的线性表达式支持浮点数系数
-    combined_jit_cost = 0.3 * total_earliness + 0.7 * total_tardiness
+    combined_jit_cost = earliness_weight * total_earliness + lateness_weight * total_tardiness
 
     # 总偏差天数 / (总订单数*允许偏差天数) -> [0,1]的偏差率，获得相关系数
     total_orders = len(data.orders)

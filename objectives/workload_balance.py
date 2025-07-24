@@ -8,9 +8,7 @@ from ortools.sat.python import cp_model
 from core.process_data import APSInputData, _get_efficiency_for_order
 from core.variable_registry import VariableDict
 
-# 定义一个缩放因子，将百分比转换为更高精度的整数。
-# 例如，85.7% -> 857。这有助于求解器处理。
-SCALING_FACTOR = 1000
+
 
 
 def add_workload_balance_objective(
@@ -31,6 +29,14 @@ def add_workload_balance_objective(
         cp_model.LinearExpr: 一个代表了综合“负荷相关成本”的线性表达式。
     """
     logging.info("开始添加“工厂负荷均衡”目标项 (排除0负载)...")
+
+    # 从配置中读取workload参数
+    workload_config = data.settings.get("workload_objective_config", {})
+    imbalance_weight = workload_config.get("imbalance_weight", 0.5)  # 默认为0.5
+    max_load_weight = workload_config.get("max_load_weight", 0.5)  # 默认为0.5
+    # 定义一个缩放因子，将百分比转换为更高精度的整数。
+    # 例如，85.7% -> 857。这有助于求解器处理。
+    SCALING_FACTOR = workload_config.get("SCALING_FACTOR", 1000)  # 默认为1000
 
     # 1. 创建全局的最大/最小负载率（已缩放）辅助变量
     # 范围从 0 到 SCALING_FACTOR (即 0% 到 1000%)，可以适当放大范围以允许超载
@@ -92,7 +98,7 @@ def add_workload_balance_objective(
     max_load_cost = max_load_ratio_scaled
 
     # 将两个子目标以50/50的比例组合成最终的“不均衡成本”
-    combined_balance_cost = 0.5 * imbalance_cost + 0.5 * max_load_cost
+    combined_balance_cost = imbalance_weight * imbalance_cost + max_load_weight * max_load_cost
 
     # 不均衡成本(0-SCALING_FACTOR) / SCALING_FACTOR -> [0,1]的不均衡率，获得相关系数
     workload_to_percentage_factor = 1 / SCALING_FACTOR

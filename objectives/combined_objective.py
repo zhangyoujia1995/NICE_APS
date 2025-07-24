@@ -11,7 +11,7 @@ from core.variable_registry import VariableDict
 # 动态导入所有单个的目标函数模块
 from .tardiness_penalty import add_tardiness_penalty_objective
 from .just_in_time import add_jit_deviation_objective
-from .workload_balance import add_workload_balance_objective, SCALING_FACTOR
+from .workload_balance import add_workload_balance_objective
 
 
 def set_combined_objective(
@@ -30,7 +30,7 @@ def set_combined_objective(
     # 1. 从配置文件中获取各个目标的权重
     weights = data.settings.get('objective_weights', {})
     w_tardy = weights.get('tardiness', 0)
-    w_jit = weights.get('jit_deviation', 0.0)
+    w_jit = weights.get('jit_deviation', 0)
     w_balance = weights.get('workload_balance', 0)
     logging.info(f"目标权重 - 延误率: {w_tardy}, JIT偏差: {w_jit}, 负载均衡: {w_balance}")
 
