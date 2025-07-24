@@ -94,5 +94,10 @@ def add_workload_balance_objective(
     # 将两个子目标以50/50的比例组合成最终的“不均衡成本”
     combined_balance_cost = 0.5 * imbalance_cost + 0.5 * max_load_cost
 
+    # 不均衡成本(0-SCALING_FACTOR) / SCALING_FACTOR -> [0,1]的不均衡率，获得相关系数
+    workload_to_percentage_factor = 1 / SCALING_FACTOR
+
+    workload_balance_rate_expr = workload_to_percentage_factor * combined_balance_cost
+
     logging.info("“工厂负荷均衡”目标项添加完成。")
-    return combined_balance_cost
+    return workload_balance_rate_expr

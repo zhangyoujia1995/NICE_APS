@@ -55,14 +55,7 @@ def set_combined_objective(
         logging.info("JIT偏差权重 > 0，激活该目标项。")
         jit_term = add_jit_deviation_objective(model, data, variables)
         if jit_term is not None:
-            # 从配置中读取JIT参数
-            jit_config = data.settings.get("jit_objective_config", {})
-            allowed_deviation = jit_config.get("allowed_deviation_days", 30)  # 默认为30
-
-            # 总偏差天数 / (总订单数*允许偏差天数) -> [0,1]的偏差率，获得相关系数
-            jit_days_to_percentage_factor = 1 / (allowed_deviation * total_orders)
-
-            objective_jit = w_jit * jit_term * jit_days_to_percentage_factor
+            objective_jit = w_jit * jit_term
             total_objective_terms.append(objective_jit)
 
     # c. 处理负载均衡目标项
@@ -70,10 +63,7 @@ def set_combined_objective(
         logging.info("负载均衡权重 > 0，激活该目标项。")
         balance_term = add_workload_balance_objective(model, data, variables)
         if balance_term is not None:
-            # 不均衡成本(0-SCALING_FACTOR) / SCALING_FACTOR -> [0,1]的不均衡率，获得相关系数
-            workload_to_percentage_factor = 1 / SCALING_FACTOR
-
-            objective_balance = w_balance * balance_term * workload_to_percentage_factor
+            objective_balance = w_balance * balance_term
             total_objective_terms.append(objective_balance)
 
     # 3. 将加权后的所有目标项求和，并设置为模型要最小化的目标

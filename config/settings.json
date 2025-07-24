@@ -24,5 +24,9 @@
   },
   "jit_objective_config": {
     "allowed_deviation_days": 30
+  },
+  "tardiness_objective_config": {
+    "firm_tardy_weight": 0.7,
+    "forecast_tardy_weight": 0.3
   }
 }

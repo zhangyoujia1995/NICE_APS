@@ -28,7 +28,11 @@ def add_jit_deviation_objective(
             一个代表了综合“JIT偏差成本”的线性表达式。
             如果所有订单都无法排产，则可能返回None。
     """
-    logging.info("开始添加“JIT偏差”组合目标项 (采用0.4/0.6内置权重)...")
+    logging.info("开始添加“JIT偏差”组合目标项 (采用0.3/0.7内置权重)...")
+
+    # 从配置中读取JIT参数
+    jit_config = data.settings.get("jit_objective_config", {})
+    allowed_deviation = jit_config.get("allowed_deviation_days", 30)  # 默认为30
 
     earliness_vars = []
     tardiness_vars = []
@@ -84,6 +88,12 @@ def add_jit_deviation_objective(
     # CP-SAT的线性表达式支持浮点数系数
     combined_jit_cost = 0.3 * total_earliness + 0.7 * total_tardiness
 
+    # 总偏差天数 / (总订单数*允许偏差天数) -> [0,1]的偏差率，获得相关系数
+    total_orders = len(data.orders)
+    jit_days_to_percentage_factor = 1 / (allowed_deviation * total_orders)
+
+    jit_rate_expr = combined_jit_cost * jit_days_to_percentage_factor
+
     logging.info("“JIT偏差”组合目标项添加完成。")
 
-    return combined_jit_cost
+    return jit_rate_expr

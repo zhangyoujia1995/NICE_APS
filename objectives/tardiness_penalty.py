@@ -31,7 +31,7 @@ def add_tardiness_penalty_objective(
     logging.info("开始添加“最小化延误订单数量”目标项...")
 
     # 从配置中读取对不同订单类型的整数惩罚
-    config = data.settings.get("tardiness_penalty_config", {})
+    config = data.settings.get("tardiness_objective_config", {})
     firm_tardy_weight = config.get("firm_tardy_weight", 0.7)
     forecast_tardy_weight = config.get("forecast_tardy_weight", 0.3)
 
@@ -93,8 +93,8 @@ def add_tardiness_penalty_objective(
         logging.info("没有需要计算延误率的订单类型。")
         return None
 
-    final_tardiness_rate_expr = sum(tardiness_rate_terms)
+    tardiness_rate_expr = sum(tardiness_rate_terms)
 
     logging.info("“最小化延误订单数量”目标项添加完成。")
 
-    return final_tardiness_rate_expr
+    return tardiness_rate_expr
